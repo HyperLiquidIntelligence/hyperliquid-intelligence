@@ -158,9 +158,15 @@ class AetherPerpNode:
                             p_ema_f = self.calculate_ema(hist[:-1], self.ema_fast)
                             p_ema_s = self.calculate_ema(hist[:-1], self.ema_slow)
                             if p_ema_f <= p_ema_s and ema_f > ema_s:
-                                self.execute_trade(coin, "long", price)
+                                if state['value'] >= self.size_usdc:
+                                    self.execute_trade(coin, "long", price)
+                                else:
+                                    print(f"\n{Colors.WARNING}[AetherPerp-Skip] Insufficient funds for {coin} ({state['value']:.2f} < {self.size_usdc}).{Colors.RESET}")
                             elif p_ema_f >= p_ema_s and ema_f < ema_s:
-                                self.execute_trade(coin, "short", price)
+                                if state['value'] >= self.size_usdc:
+                                    self.execute_trade(coin, "short", price)
+                                else:
+                                    print(f"\n{Colors.WARNING}[AetherPerp-Skip] Insufficient funds for {coin} ({state['value']:.2f} < {self.size_usdc}).{Colors.RESET}")
                 time.sleep(15)
             except Exception as e:
                 print(f"\n{Colors.ERROR}[Error] {e}{Colors.RESET}")
