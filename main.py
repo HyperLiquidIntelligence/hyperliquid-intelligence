@@ -146,8 +146,11 @@ class AetherPerpNode:
             print("\033[2J\033[H", end="")
             state = self.get_account_state()
             active_pairs = [p['coin'] for p in state['active_details']]
+            idle_min = (time.time() - self.last_trade_time) / 60
+            
             print(f"{Colors.BOLD}{Colors.AetherPerp}--- AetherPerp Multi-Neural Dashboard ---{Colors.RESET}")
             print(f"{Colors.SUCCESS}Balance:  ${state['value']:.2f}{Colors.RESET} | {Colors.WARNING}Sub: {state['addr'][:10]}...{Colors.RESET}")
+            print(f"{Colors.INFO}Idle Time: {idle_min:.1f} / 10.0 min{Colors.RESET}")
             print("-" * 55)
             print(f"{'Coin':<6} | {'Price':<10} | {'EMA9/21':<15} | {'PnL':<8}")
             print("-" * 55)
