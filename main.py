@@ -98,40 +98,47 @@ class AetherPerpNode:
                     break
             
             positions = data.get("clearinghouseState", {}).get("assetPositions", [])
-            active = []
+            active_details = []
             for p in positions:
                 entry = p.get("position", {})
                 size = float(entry.get("szi", 0))
                 if abs(size) > 0:
-                    active.append(entry.get("coin"))
-            return {"value": perp_val + l1_val, "active_pairs": active, "addr": subaccount}
+                    active_details.append({
+                        "coin": entry.get("coin"),
+                        "pnl": float(entry.get("unrealizedPnl", 0))
+                    })
+            return {"value": perp_val + l1_val, "active_details": active_details, "addr": subaccount}
         except Exception as e:
-            return {"value": 0, "active_pairs": [], "addr": self.wallet.address}
+            return {"value": 0, "active_details": [], "addr": self.wallet.address}
 
     def execute_trade(self, coin, side, price):
         """Execute high-precision Neural Delta trade."""
         print(f"\n{Colors.WARNING}[AetherPerp-Pulse] Triggering {side.upper()} on {coin} at {price}...{Colors.RESET}")
-        req = {
-            "action": "open",
-            "pair": coin,
-            "side": side,
-            "size": str(self.size_usdc * self.leverage),
-            "leverage": self.leverage
-        }
+        req = {"action": "open", "pair": coin, "side": side, "size": str(self.size_usdc * self.leverage), "leverage": self.leverage}
+        self._send_acp_job("perp_trade", req, coin, side)
+
+    def execute_close(self, coin):
+        """Close all positions for a specific coin."""
+        print(f"\n{Colors.WARNING}[AetherPerp-Pulse] Closing {coin} position...{Colors.RESET}")
+        req = {"action": "close", "pair": coin}
+        self._send_acp_job("perp_trade", req, coin, "CLOSE")
+
+    def _send_acp_job(self, job_type, req, coin, label):
         env = os.environ.copy()
         env["PATH"] = "/tmp:" + env.get("PATH", "")
         env["DGCLAW_API_KEY"] = self.api_key
-        cmd = f"acp job create {self.provider} perp_trade --requirements '{json.dumps(req)}' --isAutomated true"
+        cmd = f"acp job create {self.provider} {job_type} --requirements '{json.dumps(req)}' --isAutomated true"
         subprocess.run(cmd, shell=True, env=env)
-        print(f"{Colors.SUCCESS}[AetherPerp-Success] Synapse initiated for {coin} {side.upper()}.{Colors.RESET}")
+        print(f"{Colors.SUCCESS}[AetherPerp-Success] Synapse {label} initiated for {coin}.{Colors.RESET}")
 
     def print_status_snapshot(self):
         """Print a multi-line dashboard for all pairs."""
         try:
             state = self.get_account_state()
+            active_pairs = [p['coin'] for p in state['active_details']]
             print(f"{Colors.BOLD}{Colors.AetherPerp}--- AetherPerp Multi-Neural Dashboard ---{Colors.RESET}")
             print(f"{Colors.SUCCESS}Balance:  ${state['value']:.2f}{Colors.RESET} | {Colors.WARNING}Sub: {state['addr'][:10]}...{Colors.RESET}")
-            print(f"{Colors.INFO}Active Positions: {','.join(state['active_pairs']) if state['active_pairs'] else 'None'}{Colors.RESET}")
+            print(f"{Colors.INFO}Active Positions: {','.join(active_pairs) if active_pairs else 'None'}{Colors.RESET}")
             print("-" * 40)
             for coin in self.pairs:
                 data = self.get_market_data(coin)
@@ -146,31 +153,46 @@ class AetherPerpNode:
         while True:
             try:
                 state = self.get_account_state()
+                active_coins = {p['coin']: p['pnl'] for p in state['active_details']}
+                
+                # Check for Exits (TP/SL)
+                for coin, pnl in active_coins.items():
+                    if pnl >= self.tp_usd:
+                        print(f"\n{Colors.SUCCESS}[TP Hit] {coin} PnL: ${pnl:.2f}{Colors.RESET}")
+                        self.execute_close(coin)
+                    elif pnl <= -self.sl_usd:
+                        print(f"\n{Colors.ERROR}[SL Hit] {coin} PnL: ${pnl:.2f}{Colors.RESET}")
+                        self.execute_close(coin)
+
+                # Check for Entries
                 for coin in self.pairs:
                     data = self.get_market_data(coin)
                     if data:
                         price, ema_f, ema_s = data['price'], data['ema_f'], data['ema_s']
-                        # Log to stdout (one line per pair, overwriting)
                         print(f"\r{Colors.AetherPerp}[{coin}] Px:{price:.2f} | EMA:{ema_f:.1f}/{ema_s:.1f} | Bal:${state['value']:.2f}{Colors.RESET}       ", end="", flush=True)
                         
-                        if coin not in state['active_pairs']:
+                        if coin not in active_coins:
                             hist = data['history']
                             p_ema_f = self.calculate_ema(hist[:-1], self.ema_fast)
                             p_ema_s = self.calculate_ema(hist[:-1], self.ema_slow)
                             if p_ema_f <= p_ema_s and ema_f > ema_s:
                                 if state['value'] >= self.size_usdc:
                                     self.execute_trade(coin, "long", price)
-                                else:
-                                    print(f"\n{Colors.WARNING}[AetherPerp-Skip] Insufficient funds for {coin} ({state['value']:.2f} < {self.size_usdc}).{Colors.RESET}")
                             elif p_ema_f >= p_ema_s and ema_f < ema_s:
                                 if state['value'] >= self.size_usdc:
                                     self.execute_trade(coin, "short", price)
-                                else:
-                                    print(f"\n{Colors.WARNING}[AetherPerp-Skip] Insufficient funds for {coin} ({state['value']:.2f} < {self.size_usdc}).{Colors.RESET}")
                 time.sleep(15)
             except Exception as e:
                 print(f"\n{Colors.ERROR}[Error] {e}{Colors.RESET}")
                 time.sleep(10)
+
+if __name__ == "__main__":
+    import sys
+    node = AetherPerpNode()
+    if len(sys.argv) > 1 and sys.argv[1] == "status":
+        node.print_status_snapshot()
+    else:
+        node.run()
 
 if __name__ == "__main__":
     import sys
