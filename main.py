@@ -30,7 +30,7 @@ class AetherPerpNode:
         self.ema_fast = 9
         self.ema_slow = 21
         self.leverage = 20
-        self.size_usdc = 5
+        self.size_usdc = 10
         self.tp_usd = 0.10
         self.sl_usd = 0.10
         self.last_subaccount = None
