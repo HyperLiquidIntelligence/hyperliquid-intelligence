@@ -25,7 +25,7 @@ class AetherPerpNode:
         self.wallet = Account.from_key(self.private_key)
         self.provider = os.getenv("DGCLAW_PROVIDER", "0xd478a8B40372db16cA8045F28C6FE07228F3781A")
         
-        self.pair = "ETH"
+        self.pairs = ["ETH", "HYPE", "BTC"]
         self.timeframe = "1m"
         self.ema_fast = 9
         self.ema_slow = 21
@@ -35,37 +35,27 @@ class AetherPerpNode:
         self.sl_usd = 0.10
         self.last_subaccount = None
 
-    def get_market_data(self):
-        """Fetch 1m candle data and calculate EMAs."""
+    def get_market_data(self, coin):
+        """Fetch 1m candle data and calculate EMAs for a specific coin."""
         try:
             url = "https://api.hyperliquid.xyz/info"
             payload = {
                 "type": "candleSnapshot",
                 "req": {
-                    "coin": self.pair,
+                    "coin": coin,
                     "interval": "1m",
                     "startTime": int((time.time() - 3600) * 1000)
                 }
             }
             resp = requests.post(url, json=payload, timeout=10)
             data = resp.json()
-            
             if not isinstance(data, list): return None
-            
             closes = [float(c['c']) for c in data]
             if len(closes) < self.ema_slow: return None
-            
             ema_f = self.calculate_ema(closes, self.ema_fast)
             ema_s = self.calculate_ema(closes, self.ema_slow)
-            
-            return {
-                "price": closes[-1],
-                "ema_f": ema_f,
-                "ema_s": ema_s,
-                "history": closes
-            }
-        except Exception as e:
-            return None
+            return {"price": closes[-1], "ema_f": ema_f, "ema_s": ema_s, "history": closes}
+        except: return None
 
     def calculate_ema(self, prices, period):
         k = 2 / (period + 1)
@@ -77,13 +67,11 @@ class AetherPerpNode:
     def get_account_state(self):
         """Robust balance and position check via curl."""
         try:
-            # 1. Detect subaccount from history
             env = os.environ.copy()
             env["PATH"] = "/tmp:" + env.get("PATH", "")
-            env["DGCLAW_API_KEY"] = self.api_key # FORCE ISOLATION
+            env["DGCLAW_API_KEY"] = self.api_key
             cmd = "acp job completed --json --limit 50"
             res = subprocess.run(cmd, shell=True, capture_output=True, text=True, env=env)
-            
             subaccount = os.getenv("SUBACCOUNT_ADDRESS") or self.last_subaccount
             if not subaccount and res.returncode == 0:
                 jobs = json.loads(res.stdout)
@@ -93,10 +81,8 @@ class AetherPerpNode:
                         subaccount = sa
                         self.last_subaccount = sa
                         break
-            
             if not subaccount: subaccount = self.wallet.address
 
-            # 2. Fetch data via webData2
             curl_cmd = [
                 "curl", "-s", "-X", "POST", "https://api.hyperliquid.xyz/info",
                 "-H", "Content-Type: application/json",
@@ -104,7 +90,6 @@ class AetherPerpNode:
             ]
             resp = subprocess.run(curl_cmd, capture_output=True, text=True)
             data = json.loads(resp.stdout)
-            
             perp_val = float(data.get("clearinghouseState", {}).get("marginSummary", {}).get("accountValue", 0))
             l1_val = 0
             for b in data.get("spotState", {}).get("balances", []):
@@ -119,84 +104,66 @@ class AetherPerpNode:
                 size = float(entry.get("szi", 0))
                 if abs(size) > 0:
                     active.append(entry.get("coin"))
-
             return {"value": perp_val + l1_val, "active_pairs": active, "addr": subaccount}
         except Exception as e:
             return {"value": 0, "active_pairs": [], "addr": self.wallet.address}
 
-    def execute_trade(self, side, price):
+    def execute_trade(self, coin, side, price):
         """Execute high-precision Neural Delta trade."""
-        print(f"\n{Colors.WARNING}[AetherPerp-Pulse] Triggering {side.upper()} on {self.pair} at {price}...{Colors.RESET}")
-        
-        # Target constant profit/loss of $0.10
-        # tp = price * (1 + self.tp_pct) if side == "long" else price * (1 - self.tp_pct)
-        # sl = price * (1 - self.sl_pct) if side == "long" else price * (1 + self.sl_pct)
-        
+        print(f"\n{Colors.WARNING}[AetherPerp-Pulse] Triggering {side.upper()} on {coin} at {price}...{Colors.RESET}")
         req = {
             "action": "open",
-            "pair": self.pair,
+            "pair": coin,
             "side": side,
             "size": str(self.size_usdc * self.leverage),
             "leverage": self.leverage
         }
-        
         env = os.environ.copy()
         env["PATH"] = "/tmp:" + env.get("PATH", "")
         env["DGCLAW_API_KEY"] = self.api_key
-        
         cmd = f"acp job create {self.provider} perp_trade --requirements '{json.dumps(req)}' --isAutomated true"
         subprocess.run(cmd, shell=True, env=env)
-        print(f"{Colors.SUCCESS}[AetherPerp-Success] Synapse initiated for {side.upper()}.{Colors.RESET}")
+        print(f"{Colors.SUCCESS}[AetherPerp-Success] Synapse initiated for {coin} {side.upper()}.{Colors.RESET}")
 
     def print_status_snapshot(self):
-        """Print a single-line clean status for watch/dashboard."""
+        """Print a multi-line dashboard for all pairs."""
         try:
             state = self.get_account_state()
-            data = self.get_market_data()
-            if data:
-                price = data['price']
-                ema_f = data['ema_f']
-                ema_s = data['ema_s']
-                pos_str = ",".join(state['active_pairs']) if state['active_pairs'] else "None"
-                
-                print(f"{Colors.BOLD}{Colors.AetherPerp}--- AetherPerp Dashboard ---{Colors.RESET}")
-                print(f"{Colors.INFO}Pair:     {self.pair}{Colors.RESET}")
-                print(f"{Colors.INFO}Price:    {price:.2f}{Colors.RESET}")
-                print(f"{Colors.INFO}EMA 9/21: {ema_f:.3f} / {ema_s:.3f}{Colors.RESET}")
-                print(f"{Colors.SUCCESS}Balance:  ${state['value']:.2f}{Colors.RESET}")
-                print(f"{Colors.WARNING}Active:   {pos_str}{Colors.RESET}")
-                print(f"{Colors.AetherPerp}----------------------------{Colors.RESET}")
-        except:
-            print("Fetching status...")
+            print(f"{Colors.BOLD}{Colors.AetherPerp}--- AetherPerp Multi-Neural Dashboard ---{Colors.RESET}")
+            print(f"{Colors.SUCCESS}Balance:  ${state['value']:.2f}{Colors.RESET} | {Colors.WARNING}Sub: {state['addr'][:10]}...{Colors.RESET}")
+            print(f"{Colors.INFO}Active Positions: {','.join(state['active_pairs']) if state['active_pairs'] else 'None'}{Colors.RESET}")
+            print("-" * 40)
+            for coin in self.pairs:
+                data = self.get_market_data(coin)
+                if data:
+                    print(f"{Colors.AetherPerp}{coin:<5}{Colors.RESET} | Px: {data['price']:<9.2f} | EMA9/21: {data['ema_f']:.2f}/{data['ema_s']:.2f}")
+            print("-" * 40)
+        except Exception as e:
+            print(f"Syncing... {e}")
 
     def run(self):
-        print(f"\n{Colors.BOLD}{Colors.AetherPerp}⚡ AetherPerp | Scalper Core Active{Colors.RESET}")
-        
+        print(f"\n{Colors.BOLD}{Colors.AetherPerp}⚡ AetherPerp | Multi-Neural Core Active (ETH, HYPE, BTC){Colors.RESET}")
         while True:
             try:
                 state = self.get_account_state()
-                data = self.get_market_data()
-                
-                if data:
-                    price = data['price']
-                    ema_f = data['ema_f']
-                    ema_s = data['ema_s']
-                    
-                    print(f"\r{Colors.AetherPerp}[AetherPerp-Node] {self.pair}: {price:.2f} | EMA{self.ema_fast}/{self.ema_slow}: {ema_f:.3f}/{ema_s:.3f} | Bal: ${state['value']:.2f}{Colors.RESET}   ", end="", flush=True)
-                    
-                    if self.pair not in state['active_pairs']:
-                        hist = data['history']
-                        prev_ema_f = self.calculate_ema(hist[:-1], self.ema_fast)
-                        prev_ema_s = self.calculate_ema(hist[:-1], self.ema_slow)
+                for coin in self.pairs:
+                    data = self.get_market_data(coin)
+                    if data:
+                        price, ema_f, ema_s = data['price'], data['ema_f'], data['ema_s']
+                        # Log to stdout (one line per pair, overwriting)
+                        print(f"\r{Colors.AetherPerp}[{coin}] Px:{price:.2f} | EMA:{ema_f:.1f}/{ema_s:.1f} | Bal:${state['value']:.2f}{Colors.RESET}       ", end="", flush=True)
                         
-                        if prev_ema_f <= prev_ema_s and ema_f > ema_s:
-                            self.execute_trade("long", price)
-                        elif prev_ema_f >= prev_ema_s and ema_f < ema_s:
-                            self.execute_trade("short", price)
-                
-                time.sleep(20)
+                        if coin not in state['active_pairs']:
+                            hist = data['history']
+                            p_ema_f = self.calculate_ema(hist[:-1], self.ema_fast)
+                            p_ema_s = self.calculate_ema(hist[:-1], self.ema_slow)
+                            if p_ema_f <= p_ema_s and ema_f > ema_s:
+                                self.execute_trade(coin, "long", price)
+                            elif p_ema_f >= p_ema_s and ema_f < ema_s:
+                                self.execute_trade(coin, "short", price)
+                time.sleep(15)
             except Exception as e:
-                print(f"\n{Colors.ERROR}[AetherPerp-Error] {e}{Colors.RESET}")
+                print(f"\n{Colors.ERROR}[Error] {e}{Colors.RESET}")
                 time.sleep(10)
 
 if __name__ == "__main__":
