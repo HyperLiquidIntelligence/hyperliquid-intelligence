@@ -193,11 +193,3 @@ if __name__ == "__main__":
         node.print_status_snapshot()
     else:
         node.run()
-
-if __name__ == "__main__":
-    import sys
-    node = AetherPerpNode()
-    if len(sys.argv) > 1 and sys.argv[1] == "status":
-        node.print_status_snapshot()
-    else:
-        node.run()
