@@ -37,7 +37,7 @@ class AetherPerpNode:
         self.leverage_map = {"HYPE": 10, "ETH": 20, "BTC": 20}
         self.size_usdc = 10
         self.tp_usd = 0.05
-        self.sl_usd = 0.05
+        self.sl_usd = 0.10
         self.last_trade_time = time.time()
         self.last_subaccount = None
 
