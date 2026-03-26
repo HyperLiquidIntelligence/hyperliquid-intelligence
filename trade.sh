@@ -14,7 +14,7 @@ elif [ "$1" == "watch" ]; then
         watch -t -c -n 1 "python3 main.py status"
     else
         while true; do
-            python3 main.py status
+            python3 main.py status 2>/dev/null
             echo -e "\nPress Ctrl+C to exit..."
             sleep 1
         done

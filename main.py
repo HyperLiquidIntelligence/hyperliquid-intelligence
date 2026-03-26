@@ -8,8 +8,9 @@ from dotenv import load_dotenv
 
 # Load neural config
 import warnings
-from urllib3.exceptions import NotOpenSSLWarning
-warnings.filterwarnings("ignore", category=NotOpenSSLWarning)
+import os
+os.environ['PYTHONWARNINGS'] = 'ignore' # Environment level
+warnings.filterwarnings("ignore")
 
 load_dotenv()
 
@@ -136,10 +137,10 @@ class AetherPerpNode:
         print(f"{Colors.SUCCESS}[AetherPerp-Success] Synapse {label} initiated for {coin}.{Colors.RESET}")
 
     def print_status_snapshot(self):
-        """Print a multi-line dashboard for all pairs with flicker reduction."""
+        """Print a multi-line dashboard with full screen refresh."""
         try:
-            # Move cursor to home (top-left) to overwrite smoothly
-            print("\033[H", end="")
+            # Clear and move to top
+            print("\033[2J\033[H", end="")
             state = self.get_account_state()
             active_pairs = [p['coin'] for p in state['active_details']]
             print(f"{Colors.BOLD}{Colors.AetherPerp}--- AetherPerp Multi-Neural Dashboard ---{Colors.RESET}")
