@@ -36,8 +36,9 @@ class AetherPerpNode:
         self.ema_slow = 21
         self.leverage_map = {"HYPE": 10, "ETH": 20, "BTC": 20}
         self.size_usdc = 10
-        self.tp_usd = 0.10
-        self.sl_usd = 0.10
+        self.tp_usd = 0.05
+        self.sl_usd = 0.05
+        self.last_trade_time = time.time()
         self.last_subaccount = None
 
     def get_market_data(self, coin):
@@ -118,6 +119,7 @@ class AetherPerpNode:
 
     def execute_trade(self, coin, side, price):
         """Execute high-precision Neural Delta trade."""
+        self.last_trade_time = time.time()
         lev = self.leverage_map.get(coin, 20)
         print(f"\n{Colors.WARNING}[AetherPerp-Pulse] Triggering {side.upper()} on {coin} at {price} ({lev}x)...{Colors.RESET}")
         req = {"action": "open", "pair": coin, "side": side, "size": str(self.size_usdc * lev), "leverage": lev}
@@ -179,13 +181,21 @@ class AetherPerpNode:
                         print(f"\n{Colors.ERROR}[SL Hit] {coin} PnL: ${pnl:.2f}{Colors.RESET}")
                         self.execute_close(coin)
 
-                # Check for Entries
+                # Check for Entry Signals
+                best_coin = None
+                max_trend = -1
+                
                 for coin in self.pairs:
                     data = self.get_market_data(coin)
                     if data:
                         price, ema_f, ema_s = data['price'], data['ema_f'], data['ema_s']
                         print(f"\r{Colors.AetherPerp}[{coin}] Px:{price:.2f} | EMA:{ema_f:.1f}/{ema_s:.1f} | Bal:${state['value']:.2f}{Colors.RESET}       ", end="", flush=True)
                         
+                        trend_strength = abs(ema_f - ema_s) / price
+                        if trend_strength > max_trend:
+                            max_trend = trend_strength
+                            best_coin = (coin, "long" if ema_f > ema_s else "short", price)
+
                         if coin not in active_coins:
                             hist = data['history']
                             p_ema_f = self.calculate_ema(hist[:-1], self.ema_fast)
@@ -196,6 +206,15 @@ class AetherPerpNode:
                             elif p_ema_f >= p_ema_s and ema_f < ema_s:
                                 if state['value'] >= self.size_usdc:
                                     self.execute_trade(coin, "short", price)
+                
+                # Inactivity Guard: If no positions and idle for 10 min, pick best trend
+                if not active_coins and (time.time() - self.last_trade_time > 600):
+                    if best_coin:
+                        coin, side, price = best_coin
+                        print(f"\n{Colors.INFO}[Inactivity-Trigger] 10min Idle. Forcing {side.upper()} on {coin}...{Colors.RESET}")
+                        if state['value'] >= self.size_usdc:
+                            self.execute_trade(coin, side, price)
+                
                 time.sleep(15)
             except Exception as e:
                 print(f"\n{Colors.ERROR}[Error] {e}{Colors.RESET}")
