@@ -84,8 +84,8 @@ class AetherPerpNode:
             cmd = "acp job completed --json --limit 50"
             res = subprocess.run(cmd, shell=True, capture_output=True, text=True, env=env)
             
-            subaccount = self.last_subaccount
-            if res.returncode == 0:
+            subaccount = os.getenv("SUBACCOUNT_ADDRESS") or self.last_subaccount
+            if not subaccount and res.returncode == 0:
                 jobs = json.loads(res.stdout)
                 for j in jobs:
                     sa = j.get("deliverable", {}).get("hlSubaccountAddress")

@@ -1,0 +1,5 @@
+/Users/kerimakay/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+
+[1m[95m⚡ AetherPerp | Scalper Core Active[0m
+[95m[AetherPerp-Node] ETH: 2070.00 | EMA9/21: 2071.008/2069.515 | Bal: $0.00[0m   [95m[AetherPerp-Node] ETH: 2069.90 | EMA9/21: 2070.988/2069.506 | Bal: $0.00[0m   [95m[AetherPerp-Node] ETH: 2069.90 | EMA9/21: 2070.771/2069.535 | Bal: $0.00[0m   
