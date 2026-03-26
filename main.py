@@ -50,7 +50,8 @@ class AetherPerpNode:
             cmd = "acp job completed --json --limit 10"
             res = subprocess.run(cmd, shell=True, capture_output=True, text=True, env=env)
             if res.returncode == 0:
-                jobs = json.loads(res.stdout)
+                data = json.loads(res.stdout)
+                jobs = data.get("jobs", [])
                 for j in jobs:
                     if j.get("phase") == "COMPLETED":
                         # Convert ISO timestamp to epoch
