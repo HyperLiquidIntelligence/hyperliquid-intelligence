@@ -39,6 +39,8 @@ class AetherPerpNode:
         self.size_usdc = 20
         self.tp_percent = 0.005 # %0.5 Profit
         self.sl_percent = 0.010 # %1.0 Stop Loss
+        self.tp_usdc = 1.0      # $1.0 Hard Profit
+        self.sl_usdc = 1.0      # $1.0 Hard Stop Loss
         
         self.last_subaccount = None
 
@@ -104,6 +106,19 @@ class AetherPerpNode:
         subprocess.run(cmd, shell=True, env=env)
         print(f"{Colors.SUCCESS}[AetherPerp-Success] {side.upper()} Pulse sent for {coin}.{Colors.RESET}")
 
+    def close_trade(self, coin):
+        print(f"\n{Colors.WARNING}[AetherPerp-Pulse] Closing position on {coin}...{Colors.RESET}")
+        req = {
+            "action": "close", "pair": coin,
+            "subaccount": os.getenv("SUBACCOUNT_ADDRESS") or self.last_subaccount or self.wallet.address
+        }
+        env = os.environ.copy()
+        env["PATH"] = "/tmp:" + env.get("PATH", "")
+        env["DGCLAW_API_KEY"] = self.api_key
+        cmd = f"acp job create {self.provider} perp_trade --requirements '{json.dumps(req)}' --isAutomated true"
+        subprocess.run(cmd, shell=True, env=env)
+        print(f"{Colors.SUCCESS}[AetherPerp-Success] Close Pulse sent for {coin}.{Colors.RESET}")
+
     def print_status_snapshot(self):
         try:
             print("\033[2J\033[H", end="")
@@ -158,7 +173,12 @@ class AetherPerpNode:
                                 if state['value'] >= self.size_usdc: self.execute_trade(coin, "short", p); break
                 else:
                     c = active[0]['coin']
-                    print(f"\r{Colors.INFO}[Active] {c} PnL: ${active[0]['pnl']:+.2f} | Waiting for Hard TP/SL...{Colors.RESET}       ", end="", flush=True)
+                    pnl = active[0]['pnl']
+                    print(f"\r{Colors.INFO}[Active] {c} PnL: ${pnl:+.2f} | Monitoring Thresholds ($1)...{Colors.RESET}       ", end="", flush=True)
+                    
+                    if pnl >= self.tp_usdc or pnl <= -self.sl_usdc:
+                        print(f"\n{Colors.WARNING}[Threshold Hit] PnL ${pnl:+.2f} reached limit. Triggering close...{Colors.RESET}")
+                        self.close_trade(c)
                 
                 # Dynamic sleep: 5s if active, 30s if scanning
                 sleep_time = 5 if active else 30

@@ -20,7 +20,7 @@ Unlike legacy algorithmic bots that rely on static heuristics, **AetherPerp** op
 The bedrock of AetherPerp is the **Neural Delta**—a sophisticated trend-parsing model optimized for 1-minute (1m) tick data. 
 
 - **Synaptic Convergence (EMA 9/21)**: The core logic identifies the precise moment of momentum shift. When the 9-period Neural average breaches the 21-period baseline, the bridge initiates a high-confidence execution.
-- **Micro-Pivot Termination**: AetherPerp operates on a "Zero-Waste" philosophy. By targeting precise **$0.10 P&L** windows, it generates massive volume while maintaining an ultra-tight risk profile, effectively harvesting the market's "noise" into consistent capital.
+- **Micro-Pivot Termination**: AetherPerp operates on a "Zero-Waste" philosophy. By targeting precise **$1.00 P&L** windows, it generates consistent volume while maintaining an ultra-tight risk profile, effectively harvesting the market's "noise" into consistent capital.
 
 ---
 
