@@ -1,4 +1,5 @@
 #!/bin/bash
+# ⚡ AetherPerp Neural-Bridge CLI Wrapper
 
 # AetherPerp CLI Wrapper
 # Created: 2026-03-26
