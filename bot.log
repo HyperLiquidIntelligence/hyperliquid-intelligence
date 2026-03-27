@@ -1,0 +1,291 @@
+/Users/kerimakay/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+
+[1m[95m⚡ AetherPerp | Safe & Stable Mode Active[0m
+[95m[Scanning] ETH Px:2059.70 | Tnd:DN[0m       [95m[Scanning] HYPE Px:38.59 | Tnd:DN[0m       [95m[Scanning] BTC Px:68755.00 | Tnd:DN[0m       [95m[Scanning] ETH Px:2059.60 | Tnd:DN[0m       [95m[Scanning] HYPE Px:38.59 | Tnd:DN[0m       [95m[Scanning] BTC Px:68743.00 | Tnd:DN[0m       [95m[Scanning] ETH Px:2060.40 | Tnd:DN[0m       [95m[Scanning] HYPE Px:38.61 | Tnd:DN[0m       [95m[Scanning] BTC Px:68741.00 | Tnd:DN[0m       [95m[Scanning] ETH Px:2060.20 | Tnd:DN[0m       [95m[Scanning] HYPE Px:38.64 | Tnd:DN[0m       [95m[Scanning] BTC Px:68735.00 | Tnd:DN[0m       [95m[Scanning] ETH Px:2059.60 | Tnd:DN[0m       [95m[Scanning] HYPE Px:38.63 | Tnd:DN[0m       [95m[Scanning] BTC Px:68723.00 | Tnd:DN[0m       [95m[Scanning] ETH Px:2053.10 | Tnd:DN[0m       [95m[Scanning] HYPE Px:38.57 | Tnd:DN[0m       [95m[Scanning] BTC Px:68640.00 | Tnd:DN[0m       [95m[Scanning] ETH Px:2043.20 | Tnd:DN[0m       [95m[Scanning] HYPE Px:38.52 | Tnd:DN[0m       [95m[Scanning] BTC Px:68391.00 | Tnd:DN[0m       [95m[Scanning] ETH Px:2048.80 | Tnd:DN[0m       [95m[Scanning] HYPE Px:38.62 | Tnd:DN[0m       [95m[Scanning] BTC Px:68522.00 | Tnd:DN[0m       [95m[Scanning] ETH Px:2049.20 | Tnd:DN[0m       [95m[Scanning] HYPE Px:38.65 | Tnd:DN[0m       [95m[Scanning] BTC Px:68476.00 | Tnd:DN[0m       [95m[Scanning] ETH Px:2050.60 | Tnd:DN[0m       [95m[Scanning] HYPE Px:38.65 | Tnd:DN[0m       [95m[Scanning] BTC Px:68542.00 | Tnd:DN[0m       [95m[Scanning] ETH Px:2051.10 | Tnd:DN[0m       [95m[Scanning] HYPE Px:38.67 | Tnd:DN[0m       [95m[Scanning] BTC Px:68570.00 | Tnd:DN[0m       [94m[Active] HYPE PnL: $+0.01 | Waiting for Hard TP/SL...[0m       [94m[Active] HYPE PnL: $-0.04 | Waiting for Hard TP/SL...[0m       [94m[Active] HYPE PnL: $-0.04 | Waiting for Hard TP/SL...[0m       [94m[Active] HYPE PnL: $-0.03 | Waiting for Hard TP/SL...[0m       [94m[Active] HYPE PnL: $-0.07 | Waiting for Hard TP/SL...[0m       [94m[Active] HYPE PnL: $-0.17 | Waiting for Hard TP/SL...[0m       [95m[Scanning] ETH Px:2047.00 | Tnd:DN[0m       [95m[Scanning] HYPE Px:38.59 | Tnd:DN[0m       [95m[Scanning] BTC Px:68425.00 | Tnd:DN[0m       [95m[Scanning] ETH Px:2045.60 | Tnd:DN[0m       [95m[Scanning] HYPE Px:38.56 | Tnd:DN[0m       [95m[Scanning] BTC Px:68379.00 | Tnd:DN[0m       [95m[Scanning] ETH Px:2043.30 | Tnd:DN[0m       [95m[Scanning] HYPE Px:38.53 | Tnd:DN[0m       [95m[Scanning] BTC Px:68281.00 | Tnd:DN[0m       [95m[Scanning] ETH Px:2043.80 | Tnd:DN[0m       [95m[Scanning] HYPE Px:38.52 | Tnd:DN[0m       [95m[Scanning] BTC Px:68293.00 | Tnd:DN[0m       [95m[Scanning] ETH Px:2044.40 | Tnd:DN[0m       [95m[Scanning] HYPE Px:38.56 | Tnd:DN[0m       [95m[Scanning] BTC Px:68329.00 | Tnd:DN[0m       [95m[Scanning] ETH Px:2043.50 | Tnd:DN[0m       [95m[Scanning] HYPE Px:38.56 | Tnd:DN[0m       [95m[Scanning] BTC Px:68309.00 | Tnd:DN[0m       [95m[Scanning] ETH Px:2044.00 | Tnd:DN[0m       [95m[Scanning] HYPE Px:38.56 | Tnd:DN[0m       [95m[Scanning] BTC Px:68315.00 | Tnd:DN[0m       [95m[Scanning] ETH Px:2044.80 | Tnd:DN[0m       [95m[Scanning] HYPE Px:38.58 | Tnd:DN[0m       [95m[Scanning] BTC Px:68317.00 | Tnd:DN[0m       [95m[Scanning] ETH Px:2044.80 | Tnd:DN[0m       [95m[Scanning] HYPE Px:38.59 | Tnd:DN[0m       [95m[Scanning] BTC Px:68311.00 | Tnd:DN[0m       [95m[Scanning] ETH Px:2046.20 | Tnd:DN[0m       [95m[Scanning] HYPE Px:38.60 | Tnd:DN[0m       [95m[Scanning] BTC Px:68361.00 | Tnd:DN[0m       [95m[Scanning] ETH Px:2045.30 | Tnd:DN[0m       [95m[Scanning] HYPE Px:38.57 | Tnd:DN[0m       [95m[Scanning] BTC Px:68359.00 | Tnd:DN[0m       [94m[Active] ETH PnL: $-0.01 | Waiting for Hard TP/SL...[0m       [94m[Active] ETH PnL: $-0.01 | Waiting for Hard TP/SL...[0m       [94m[Active] ETH PnL: $-0.11 | Waiting for Hard TP/SL...[0m       [94m[Active] ETH PnL: $-0.16 | Waiting for Hard TP/SL...[0m       [95m[Scanning] ETH Px:2045.60 | Tnd:DN[0m       [95m[Scanning] HYPE Px:38.65 | Tnd:DN[0m       [95m[Scanning] BTC Px:68402.00 | Tnd:DN[0m       [94m[Active] HYPE PnL: $-0.08 | Waiting for Hard TP/SL...[0m       [94m[Active] HYPE PnL: $-0.02 | Waiting for Hard TP/SL...[0m       [94m[Active] HYPE PnL: $+0.21 | Waiting for Hard TP/SL...[0m       [95m[Scanning] ETH Px:2046.70 | Tnd:DN[0m       [95m[Scanning] HYPE Px:38.76 | Tnd:DN[0m       [95m[Scanning] BTC Px:68418.00 | Tnd:DN[0m       [95m[Scanning] ETH Px:2048.80 | Tnd:DN[0m       [95m[Scanning] HYPE Px:38.78 | Tnd:DN[0m       [95m[Scanning] BTC Px:68471.00 | Tnd:DN[0m       [95m[Scanning] ETH Px:2048.60 | Tnd:DN[0m       [95m[Scanning] HYPE Px:38.80 | Tnd:DN[0m       [95m[Scanning] BTC Px:68470.00 | Tnd:DN[0m       [95m[Scanning] ETH Px:2049.30 | Tnd:DN[0m       [95m[Scanning] HYPE Px:38.82 | Tnd:DN[0m       [95m[Scanning] BTC Px:68489.00 | Tnd:DN[0m       [95m[Scanning] ETH Px:2050.30 | Tnd:DN[0m       [95m[Scanning] HYPE Px:38.81 | Tnd:DN[0m       [95m[Scanning] BTC Px:68511.00 | Tnd:DN[0m       [95m[Scanning] ETH Px:2050.40 | Tnd:DN[0m       [95m[Scanning] HYPE Px:38.79 | Tnd:DN[0m       [95m[Scanning] BTC Px:68521.00 | Tnd:DN[0m       [95m[Scanning] ETH Px:2050.70 | Tnd:DN[0m       [95m[Scanning] HYPE Px:38.78 | Tnd:DN[0m       [95m[Scanning] BTC Px:68517.00 | Tnd:DN[0m       [95m[Scanning] ETH Px:2051.20 | Tnd:DN[0m       [95m[Scanning] HYPE Px:38.82 | Tnd:DN[0m       [95m[Scanning] BTC Px:68529.00 | Tnd:DN[0m       [95m[Scanning] ETH Px:2050.50 | Tnd:DN[0m       [95m[Scanning] HYPE Px:38.83 | Tnd:DN[0m       [95m[Scanning] BTC Px:68505.00 | Tnd:DN[0m       [95m[Scanning] ETH Px:2050.60 | Tnd:DN[0m       [95m[Scanning] HYPE Px:38.80 | Tnd:DN[0m       [95m[Scanning] BTC Px:68503.00 | Tnd:DN[0m       [95m[Scanning] ETH Px:2050.20 | Tnd:DN[0m       [95m[Scanning] HYPE Px:38.82 | Tnd:DN[0m       [95m[Scanning] BTC Px:68501.00 | Tnd:DN[0m       [95m[Scanning] ETH Px:2049.90 | Tnd:DN[0m       [95m[Scanning] HYPE Px:38.80 | Tnd:DN[0m       [95m[Scanning] BTC Px:68464.00 | Tnd:DN[0m       [95m[Scanning] ETH Px:2049.80 | Tnd:DN[0m       [95m[Scanning] HYPE Px:38.81 | Tnd:DN[0m       [95m[Scanning] BTC Px:68464.00 | Tnd:DN[0m       [95m[Scanning] ETH Px:2050.10 | Tnd:DN[0m       [95m[Scanning] HYPE Px:38.82 | Tnd:DN[0m       [95m[Scanning] BTC Px:68448.00 | Tnd:DN[0m       [94m[Active] ETH PnL: $+0.01 | Waiting for Hard TP/SL...[0m       [94m[Active] ETH PnL: $+0.14 | Waiting for Hard TP/SL...[0m       [95m[Scanning] ETH Px:2050.10 | Tnd:DN[0m       [95m[Scanning] HYPE Px:38.84 | Tnd:DN[0m       [95m[Scanning] BTC Px:68496.00 | Tnd:DN[0m       [95m[Scanning] ETH Px:2050.10 | Tnd:DN[0m       [95m[Scanning] HYPE Px:38.83 | Tnd:DN[0m       [95m[Scanning] BTC Px:68506.00 | Tnd:DN[0m       [95m[Scanning] ETH Px:2050.10 | Tnd:DN[0m       [95m[Scanning] HYPE Px:38.81 | Tnd:DN[0m       [95m[Scanning] BTC Px:68502.00 | Tnd:DN[0m       [94m[Active] BTC PnL: $+0.00 | Waiting for Hard TP/SL...[0m       [94m[Active] BTC PnL: $-0.05 | Waiting for Hard TP/SL...[0m       [94m[Active] BTC PnL: $+0.02 | Waiting for Hard TP/SL...[0m       [94m[Active] BTC PnL: $-0.05 | Waiting for Hard TP/SL...[0m       [94m[Active] BTC PnL: $-0.03 | Waiting for Hard TP/SL...[0m       [94m[Active] BTC PnL: $-0.03 | Waiting for Hard TP/SL...[0m       [94m[Active] BTC PnL: $-0.03 | Waiting for Hard TP/SL...[0m       [94m[Active] BTC PnL: $+0.03 | Waiting for Hard TP/SL...[0m       [94m[Active] BTC PnL: $+0.11 | Waiting for Hard TP/SL...[0m       [95m[Scanning] ETH Px:2052.10 | Tnd:DN[0m       [95m[Scanning] HYPE Px:38.85 | Tnd:DN[0m       [95m[Scanning] BTC Px:68559.00 | Tnd:DN[0m       [95m[Scanning] ETH Px:2052.90 | Tnd:DN[0m       [95m[Scanning] HYPE Px:38.87 | Tnd:DN[0m       [95m[Scanning] BTC Px:68588.00 | Tnd:DN[0m       [95m[Scanning] ETH Px:2052.20 | Tnd:DN[0m       [95m[Scanning] HYPE Px:38.85 | Tnd:DN[0m       [95m[Scanning] BTC Px:68569.00 | Tnd:DN[0m       [95m[Scanning] ETH Px:2052.50 | Tnd:DN[0m       [95m[Scanning] HYPE Px:38.86 | Tnd:DN[0m       [95m[Scanning] BTC Px:68570.00 | Tnd:DN[0m       [95m[Scanning] ETH Px:2052.70 | Tnd:DN[0m       [95m[Scanning] HYPE Px:38.87 | Tnd:DN[0m       [95m[Scanning] BTC Px:68574.00 | Tnd:DN[0m       [95m[Scanning] ETH Px:2052.10 | Tnd:DN[0m       [95m[Scanning] HYPE Px:38.86 | Tnd:DN[0m       [95m[Scanning] BTC Px:68572.00 | Tnd:DN[0m       [95m[Scanning] ETH Px:2052.10 | Tnd:DN[0m       [95m[Scanning] HYPE Px:38.86 | Tnd:DN[0m       [95m[Scanning] BTC Px:68573.00 | Tnd:DN[0m       [95m[Scanning] ETH Px:2051.20 | Tnd:DN[0m       [95m[Scanning] HYPE Px:38.86 | Tnd:DN[0m       [95m[Scanning] BTC Px:68559.00 | Tnd:DN[0m       [95m[Scanning] ETH Px:2051.90 | Tnd:DN[0m       [95m[Scanning] HYPE Px:38.88 | Tnd:DN[0m       [95m[Scanning] BTC Px:68569.00 | Tnd:DN[0m       [94m[Active] HYPE PnL: $-0.01 | Waiting for Hard TP/SL...[0m       [94m[Active] HYPE PnL: $+0.02 | Waiting for Hard TP/SL...[0m       [94m[Active] HYPE PnL: $+0.07 | Waiting for Hard TP/SL...[0m       [94m[Active] HYPE PnL: $+0.06 | Waiting for Hard TP/SL...[0m       [95m[Scanning] ETH Px:2052.20 | Tnd:DN[0m       [95m[Scanning] HYPE Px:38.90 | Tnd:DN[0m       [95m[Scanning] BTC Px:68569.00 | Tnd:DN[0m       [95m[Scanning] ETH Px:2051.90 | Tnd:DN[0m       [95m[Scanning] HYPE Px:38.87 | Tnd:DN[0m       [95m[Scanning] BTC Px:68570.00 | Tnd:DN[0m       [95m[Scanning] ETH Px:2051.70 | Tnd:DN[0m       [95m[Scanning] HYPE Px:38.87 | Tnd:DN[0m       [95m[Scanning] BTC Px:68557.00 | Tnd:DN[0m       [95m[Scanning] ETH Px:2051.30 | Tnd:DN[0m       [95m[Scanning] HYPE Px:38.86 | Tnd:DN[0m       [95m[Scanning] BTC Px:68544.00 | Tnd:DN[0m       [95m[Scanning] ETH Px:2051.50 | Tnd:DN[0m       [95m[Scanning] HYPE Px:38.86 | Tnd:DN[0m       [95m[Scanning] BTC Px:68548.00 | Tnd:DN[0m       [95m[Scanning] ETH Px:2051.70 | Tnd:DN[0m       [95m[Scanning] HYPE Px:38.77 | Tnd:DN[0m       [95m[Scanning] BTC Px:68552.00 | Tnd:DN[0m       [95m[Scanning] ETH Px:2052.70 | Tnd:DN[0m       [95m[Scanning] HYPE Px:38.79 | Tnd:DN[0m       [95m[Scanning] BTC Px:68576.00 | Tnd:DN[0m       [95m[Scanning] ETH Px:2053.00 | Tnd:DN[0m       [95m[Scanning] HYPE Px:38.80 | Tnd:DN[0m       [95m[Scanning] BTC Px:68584.00 | Tnd:DN[0m       [95m[Scanning] ETH Px:2053.30 | Tnd:DN[0m       [95m[Scanning] HYPE Px:38.80 | Tnd:DN[0m       [95m[Scanning] BTC Px:68592.00 | Tnd:DN[0m       [95m[Scanning] ETH Px:2052.80 | Tnd:DN[0m       [95m[Scanning] HYPE Px:38.78 | Tnd:DN[0m       [95m[Scanning] BTC Px:68569.00 | Tnd:DN[0m       [95m[Scanning] ETH Px:2052.30 | Tnd:DN[0m       [95m[Scanning] HYPE Px:38.78 | Tnd:DN[0m       [95m[Scanning] BTC Px:68567.00 | Tnd:DN[0m       [94m[Active] HYPE PnL: $-0.00 | Waiting for Hard TP/SL...[0m       [94m[Active] HYPE PnL: $+0.03 | Waiting for Hard TP/SL...[0m       [94m[Active] HYPE PnL: $+0.02 | Waiting for Hard TP/SL...[0m       [94m[Active] HYPE PnL: $-0.10 | Waiting for Hard TP/SL...[0m       [94m[Active] HYPE PnL: $-0.06 | Waiting for Hard TP/SL...[0m       [94m[Active] HYPE PnL: $-0.06 | Waiting for Hard TP/SL...[0m       [94m[Active] HYPE PnL: $-0.10 | Waiting for Hard TP/SL...[0m       [95m[Scanning] ETH Px:2053.00 | Tnd:DN[0m       [95m[Scanning] HYPE Px:38.82 | Tnd:DN[0m       [95m[Scanning] BTC Px:68599.00 | Tnd:DN[0m       [95m[Scanning] ETH Px:2052.70 | Tnd:DN[0m       [95m[Scanning] HYPE Px:38.82 | Tnd:DN[0m       [95m[Scanning] BTC Px:68587.00 | Tnd:DN[0m       [95m[Scanning] ETH Px:2052.70 | Tnd:DN[0m       [95m[Scanning] HYPE Px:38.82 | Tnd:DN[0m       [95m[Scanning] BTC Px:68592.00 | Tnd:DN[0m       [95m[Scanning] ETH Px:2051.80 | Tnd:DN[0m       [95m[Scanning] HYPE Px:38.81 | Tnd:DN[0m       [95m[Scanning] BTC Px:68561.00 | Tnd:DN[0m       [95m[Scanning] ETH Px:2051.30 | Tnd:DN[0m       [95m[Scanning] HYPE Px:38.81 | Tnd:DN[0m       [95m[Scanning] BTC Px:68561.00 | Tnd:DN[0m       [95m[Scanning] ETH Px:2052.20 | Tnd:DN[0m       [95m[Scanning] HYPE Px:38.81 | Tnd:DN[0m       [95m[Scanning] BTC Px:68583.00 | Tnd:DN[0m       [95m[Scanning] ETH Px:2052.60 | Tnd:DN[0m       [95m[Scanning] HYPE Px:38.85 | Tnd:DN[0m       [95m[Scanning] BTC Px:68591.00 | Tnd:DN[0m       [94m[Active] HYPE PnL: $+0.00 | Waiting for Hard TP/SL...[0m       [94m[Active] HYPE PnL: $+0.01 | Waiting for Hard TP/SL...[0m       [94m[Active] HYPE PnL: $+0.02 | Waiting for Hard TP/SL...[0m       [94m[Active] HYPE PnL: $-0.06 | Waiting for Hard TP/SL...[0m       [94m[Active] HYPE PnL: $-0.10 | Waiting for Hard TP/SL...[0m       [94m[Active] HYPE PnL: $-0.10 | Waiting for Hard TP/SL...[0m       [95m[Scanning] ETH Px:2052.10 | Tnd:DN[0m       [95m[Scanning] HYPE Px:38.79 | Tnd:DN[0m       [95m[Scanning] BTC Px:68546.00 | Tnd:DN[0m       [95m[Scanning] ETH Px:2052.20 | Tnd:DN[0m       [95m[Scanning] HYPE Px:38.76 | Tnd:DN[0m       [95m[Scanning] BTC Px:68535.00 | Tnd:DN[0m       [94m[Active] HYPE PnL: $-0.04 | Waiting for Hard TP/SL...[0m       [94m[Active] HYPE PnL: $+0.01 | Waiting for Hard TP/SL...[0m       [94m[Active] BTC PnL: $+0.01 | Waiting for Hard TP/SL...[0m       [94m[Active] BTC PnL: $+0.01 | Waiting for Hard TP/SL...[0m       [94m[Active] BTC PnL: $+0.02 | Waiting for Hard TP/SL...[0m       [94m[Active] BTC PnL: $+0.04 | Waiting for Hard TP/SL...[0m       [94m[Active] BTC PnL: $+0.04 | Waiting for Hard TP/SL...[0m       [94m[Active] BTC PnL: $+0.02 | Waiting for Hard TP/SL...[0m       [94m[Active] BTC PnL: $+0.02 | Waiting for Hard TP/SL...[0m       95m[BTC] Px:68395.00 | EMA:68385.4/68465.6 | Bal:$25.88[0m       [95m[ETH] Px:2046.20 | EMA:2045.9/2048.8 | Bal:$25.93[0m       [95m[HYPE] Px:38.64 | EMA:38.6/38.6 | Bal:$25.93[0m       [95m[BTC] Px:68432.00 | EMA:68392.8/68469.0 | Bal:$25.93[0m       
+Job Created
+--------------------------------------------------
+  Job ID             1003239157
+
+  Job submitted. Use `acp job status <jobId>` to check progress.
+
+
+[92m[TP Hit] HYPE PnL: $0.08[0m
+
+[93m[AetherPerp-Pulse] Closing HYPE position...[0m
+[92m[AetherPerp-Success] Synapse CLOSE initiated for HYPE.[0m
+[95m[ETH] Px:2046.60 | EMA:2046.1/2048.7 | Bal:$26.03[0m       [95m[HYPE] Px:38.67 | EMA:38.6/38.6 | Bal:$26.03[0m       [95m[BTC] Px:68443.00 | EMA:68404.5/68467.5 | Bal:$26.03[0m       
+Job Created
+--------------------------------------------------
+  Job ID             1003239162
+
+  Job submitted. Use `acp job status <jobId>` to check progress.
+
+
+[92m[TP Hit] HYPE PnL: $0.51[0m
+
+[93m[AetherPerp-Pulse] Closing HYPE position...[0m
+[92m[AetherPerp-Success] Synapse CLOSE initiated for HYPE.[0m
+[95m[ETH] Px:2046.70 | EMA:2046.2/2048.7 | Bal:$26.45[0m       [95m[HYPE] Px:38.78 | EMA:38.6/38.6 | Bal:$26.45[0m       [95m[BTC] Px:68432.00 | EMA:68402.3/68466.5 | Bal:$26.45[0m       [95m[ETH] Px:2046.60 | EMA:2046.1/2048.7 | Bal:$26.67[0m       [95m[HYPE] Px:38.76 | EMA:38.6/38.6 | Bal:$26.67[0m       [95m[BTC] Px:68425.00 | EMA:68400.9/68465.8 | Bal:$26.67[0m       [95m[ETH] Px:2048.50 | EMA:2046.9/2048.8 | Bal:$26.67[0m       [95m[HYPE] Px:38.79 | EMA:38.7/38.6 | Bal:$26.67[0m       [95m[BTC] Px:68467.00 | EMA:68416.5/68467.2 | Bal:$26.67[0m       [95m[ETH] Px:2048.70 | EMA:2046.9/2048.8 | Bal:$26.67[0m       [95m[HYPE] Px:38.78 | EMA:38.7/38.6 | Bal:$26.67[0m       [95m[BTC] Px:68470.00 | EMA:68417.1/68467.5 | Bal:$26.67[0m       [95m[ETH] Px:2048.80 | EMA:2046.9/2048.8 | Bal:$26.67[0m       [95m[HYPE] Px:38.81 | EMA:38.7/38.6 | Bal:$26.67[0m       [95m[BTC] Px:68471.00 | EMA:68417.3/68467.6 | Bal:$26.67[0m       [95m[ETH] Px:2049.30 | EMA:2047.4/2048.8 | Bal:$26.67[0m       [95m[HYPE] Px:38.81 | EMA:38.7/38.7 | Bal:$26.67[0m       [95m[BTC] Px:68483.00 | EMA:68430.3/68468.9 | Bal:$26.67[0m       [95m[ETH] Px:2049.20 | EMA:2047.4/2048.8 | Bal:$26.67[0m       [95m[HYPE] Px:38.82 | EMA:38.7/38.7 | Bal:$26.67[0m       [95m[BTC] Px:68490.00 | EMA:68431.7/68469.6 | Bal:$26.67[0m       [95m[ETH] Px:2049.30 | EMA:2047.4/2048.8 | Bal:$26.67[0m       [95m[HYPE] Px:38.80 | EMA:38.7/38.6 | Bal:$26.67[0m       [95m[BTC] Px:68490.00 | EMA:68431.7/68469.6 | Bal:$26.67[0m       [95m[ETH] Px:2049.50 | EMA:2047.8/2048.9 | Bal:$26.67[0m       [95m[HYPE] Px:38.80 | EMA:38.7/38.7 | Bal:$26.67[0m       [95m[BTC] Px:68524.00 | EMA:68451.3/68475.1 | Bal:$26.67[0m       [95m[ETH] Px:2050.30 | EMA:2048.0/2049.0 | Bal:$26.67[0m       [95m[HYPE] Px:38.81 | EMA:38.7/38.7 | Bal:$26.67[0m       [95m[BTC] Px:68507.00 | EMA:68447.9/68473.6 | Bal:$26.67[0m       [95m[ETH] Px:2050.30 | EMA:2048.0/2049.0 | Bal:$26.67[0m       [95m[HYPE] Px:38.79 | EMA:38.7/38.7 | Bal:$26.67[0m       [95m[BTC] Px:68517.00 | EMA:68449.9/68474.5 | Bal:$26.67[0m       [95m[ETH] Px:2051.00 | EMA:2048.1/2049.1 | Bal:$26.67[0m       [95m[HYPE] Px:38.77 | EMA:38.7/38.7 | Bal:$26.67[0m       [95m[BTC] Px:68529.00 | EMA:68466.5/68479.7 | Bal:$26.67[0m       [95m[ETH] Px:2050.70 | EMA:2048.7/2049.2 | Bal:$26.67[0m       [95m[HYPE] Px:38.78 | EMA:38.7/38.7 | Bal:$26.67[0m       [95m[BTC] Px:68517.00 | EMA:68464.1/68478.6 | Bal:$26.67[0m       [95m[ETH] Px:2050.80 | EMA:2048.7/2049.2 | Bal:$26.67[0m       [95m[HYPE] Px:38.81 | EMA:38.7/38.7 | Bal:$26.67[0m       [95m[BTC] Px:68522.00 | EMA:68465.1/68479.1 | Bal:$26.67[0m       [95m[ETH] Px:2051.30 | EMA:2048.8/2049.3 | Bal:$26.67[0m       [95m[HYPE] Px:38.83 | EMA:38.7/38.7 | Bal:$26.67[0m       [95m[BTC] Px:68529.00 | EMA:68466.5/68479.7 | Bal:$26.67[0m       [95m[ETH] Px:2051.10 | EMA:2049.2/2049.4 | Bal:$26.67[0m       [95m[HYPE] Px:38.85 | EMA:38.8/38.7 | Bal:$26.67[0m       [95m[BTC] Px:68528.00 | EMA:68478.8/68483.9 | Bal:$26.67[0m       [95m[ETH] Px:2050.50 | EMA:2049.1/2049.4 | Bal:$26.67[0m       [95m[HYPE] Px:38.80 | EMA:38.7/38.7 | Bal:$26.67[0m       [95m[BTC] Px:68495.00 | EMA:68472.2/68480.9 | Bal:$26.67[0m       [95m[ETH] Px:2050.40 | EMA:2049.1/2049.4 | Bal:$26.67[0m       [95m[HYPE] Px:38.80 | EMA:38.7/38.7 | Bal:$26.67[0m       [95m[BTC] Px:68500.00 | EMA:68473.2/68481.4 | Bal:$26.67[0m       [95m[ETH] Px:2050.30 | EMA:2049.4/2049.5 | Bal:$26.67[0m       [95m[HYPE] Px:38.81 | EMA:38.8/38.7 | Bal:$26.67[0m       [95m[BTC] Px:68502.00 | EMA:68479.0/68483.4 | Bal:$26.67[0m       [95m[ETH] Px:2050.30 | EMA:2049.4/2049.5 | Bal:$26.67[0m       [95m[HYPE] Px:38.82 | EMA:38.8/38.7 | Bal:$26.67[0m       [95m[BTC] Px:68514.00 | EMA:68481.4/68484.4 | Bal:$26.67[0m       [95m[ETH] Px:2050.20 | EMA:2049.3/2049.4 | Bal:$26.67[0m       [95m[HYPE] Px:38.82 | EMA:38.8/38.7 | Bal:$26.67[0m       [95m[BTC] Px:68470.00 | EMA:68472.6/68480.4 | Bal:$26.67[0m       [95m[ETH] Px:2050.10 | EMA:2049.4/2049.5 | Bal:$26.67[0m       [95m[HYPE] Px:38.81 | EMA:38.8/38.7 | Bal:$26.67[0m       [95m[BTC] Px:68476.00 | EMA:68472.1/68479.6 | Bal:$26.67[0m       [95m[ETH] Px:2049.80 | EMA:2049.4/2049.5 | Bal:$26.67[0m       [95m[HYPE] Px:38.81 | EMA:38.8/38.7 | Bal:$26.67[0m       [95m[BTC] Px:68465.00 | EMA:68469.9/68478.6 | Bal:$26.67[0m       [95m[ETH] Px:2049.80 | EMA:2049.4/2049.5 | Bal:$26.67[0m       [95m[HYPE] Px:38.81 | EMA:38.8/38.7 | Bal:$26.67[0m       [95m[BTC] Px:68464.00 | EMA:68469.7/68478.5 | Bal:$26.67[0m       [95m[ETH] Px:2050.10 | EMA:2049.6/2049.5 | Bal:$26.67[0m       
+Job Created
+--------------------------------------------------
+  Job ID             1003239260
+
+  Job submitted. Use `acp job status <jobId>` to check progress.
+
+
+[93m[AetherPerp-Pulse] Triggering LONG on ETH at 2050.1 (20x)...[0m
+[92m[AetherPerp-Success] Synapse long initiated for ETH.[0m
+[95m[HYPE] Px:38.82 | EMA:38.8/38.7 | Bal:$26.67[0m       [95m[BTC] Px:68433.00 | EMA:68462.4/68474.4 | Bal:$26.67[0m       [95m[ETH] Px:2050.10 | EMA:2049.6/2049.5 | Bal:$26.67[0m       
+Job Created
+--------------------------------------------------
+  Job ID             1003239262
+
+  Job submitted. Use `acp job status <jobId>` to check progress.
+
+
+[93m[AetherPerp-Pulse] Triggering LONG on ETH at 2050.1 (20x)...[0m
+[92m[AetherPerp-Success] Synapse long initiated for ETH.[0m
+[95m[HYPE] Px:38.82 | EMA:38.8/38.7 | Bal:$26.67[0m       [95m[BTC] Px:68448.00 | EMA:68465.4/68475.8 | Bal:$26.67[0m       [95m[ETH] Px:2050.00 | EMA:2049.7/2049.6 | Bal:$26.59[0m       [95m[HYPE] Px:38.83 | EMA:38.8/38.7 | Bal:$26.59[0m       [95m[BTC] Px:68463.00 | EMA:68464.9/68474.7 | Bal:$26.59[0m       
+Job Created
+--------------------------------------------------
+  Job ID             1003239265
+
+  Job submitted. Use `acp job status <jobId>` to check progress.
+
+
+[92m[TP Hit] ETH PnL: $0.10[0m
+
+[93m[AetherPerp-Pulse] Closing ETH position...[0m
+[92m[AetherPerp-Success] Synapse CLOSE initiated for ETH.[0m
+[95m[ETH] Px:2050.10 | EMA:2049.7/2049.6 | Bal:$26.59[0m       [95m[HYPE] Px:38.83 | EMA:38.8/38.7 | Bal:$26.59[0m       [95m[BTC] Px:68488.00 | EMA:68469.9/68476.9 | Bal:$26.59[0m       
+Job Created
+--------------------------------------------------
+  Job ID             1003239267
+
+  Job submitted. Use `acp job status <jobId>` to check progress.
+
+
+[92m[TP Hit] ETH PnL: $0.06[0m
+
+[93m[AetherPerp-Pulse] Closing ETH position...[0m
+[92m[AetherPerp-Success] Synapse CLOSE initiated for ETH.[0m
+[95m[ETH] Px:2050.00 | EMA:2049.7/2049.6 | Bal:$26.55[0m       [95m[HYPE] Px:38.84 | EMA:38.8/38.7 | Bal:$26.55[0m       [95m[BTC] Px:68487.00 | EMA:68469.7/68476.9 | Bal:$26.55[0m       [95m[ETH] Px:2050.10 | EMA:2049.8/2049.6 | Bal:$26.29[0m       [95m[HYPE] Px:38.84 | EMA:38.8/38.7 | Bal:$26.29[0m       [95m[BTC] Px:68495.00 | EMA:68474.9/68478.6 | Bal:$26.29[0m       [95m[ETH] Px:2050.00 | EMA:2049.7/2049.6 | Bal:$26.29[0m       [95m[HYPE] Px:38.83 | EMA:38.8/38.7 | Bal:$26.29[0m       [95m[BTC] Px:68506.00 | EMA:68477.1/68479.6 | Bal:$26.29[0m       [95m[ETH] Px:2050.10 | EMA:2049.8/2049.6 | Bal:$26.29[0m       [95m[HYPE] Px:38.81 | EMA:38.8/38.7 | Bal:$26.29[0m       [95m[BTC] Px:68510.00 | EMA:68484.5/68482.8 | Bal:$26.29[0m       
+Job Created
+--------------------------------------------------
+  Job ID             1003239280
+
+  Job submitted. Use `acp job status <jobId>` to check progress.
+
+
+[93m[AetherPerp-Pulse] Triggering LONG on BTC at 68510.0 (20x)...[0m
+[92m[AetherPerp-Success] Synapse long initiated for BTC.[0m
+[95m[ETH] Px:2050.10 | EMA:2049.8/2049.7 | Bal:$26.29[0m       [95m[HYPE] Px:38.81 | EMA:38.8/38.7 | Bal:$26.29[0m       [95m[BTC] Px:68502.00 | EMA:68482.9/68482.0 | Bal:$26.29[0m       
+Job Created
+--------------------------------------------------
+  Job ID             1003239284
+
+  Job submitted. Use `acp job status <jobId>` to check progress.
+
+
+[93m[AetherPerp-Pulse] Triggering LONG on BTC at 68502.0 (20x)...[0m
+[92m[AetherPerp-Success] Synapse long initiated for BTC.[0m
+[95m[ETH] Px:2050.10 | EMA:2049.8/2049.7 | Bal:$26.20[0m       [95m[HYPE] Px:38.81 | EMA:38.8/38.7 | Bal:$26.20[0m       [95m[BTC] Px:68500.00 | EMA:68482.5/68481.9 | Bal:$26.20[0m       [95m[ETH] Px:2049.40 | EMA:2049.7/2049.7 | Bal:$26.12[0m       [95m[HYPE] Px:38.83 | EMA:38.8/38.8 | Bal:$26.12[0m       [95m[BTC] Px:68479.00 | EMA:68482.0/68481.8 | Bal:$26.12[0m       [95m[ETH] Px:2050.10 | EMA:2049.9/2049.7 | Bal:$26.16[0m       [95m[HYPE] Px:38.83 | EMA:38.8/38.8 | Bal:$26.16[0m       [95m[BTC] Px:68490.00 | EMA:68484.2/68482.8 | Bal:$26.16[0m       [95m[ETH] Px:2051.00 | EMA:2050.1/2049.8 | Bal:$26.19[0m       [95m[HYPE] Px:38.84 | EMA:38.8/38.8 | Bal:$26.19[0m       [95m[BTC] Px:68521.00 | EMA:68490.4/68485.6 | Bal:$26.19[0m       [95m[ETH] Px:2049.80 | EMA:2049.9/2049.8 | Bal:$26.20[0m       [95m[HYPE] Px:38.84 | EMA:38.8/38.8 | Bal:$26.20[0m       [95m[BTC] Px:68483.00 | EMA:68486.6/68484.2 | Bal:$26.20[0m       [95m[ETH] Px:2049.70 | EMA:2049.9/2049.8 | Bal:$26.15[0m       [95m[HYPE] Px:38.83 | EMA:38.8/38.8 | Bal:$26.15[0m       [95m[BTC] Px:68483.00 | EMA:68486.6/68484.2 | Bal:$26.15[0m       [95m[ETH] Px:2050.00 | EMA:2050.0/2049.8 | Bal:$26.19[0m       [95m[HYPE] Px:38.84 | EMA:38.8/38.8 | Bal:$26.19[0m       [95m[BTC] Px:68486.00 | EMA:68487.2/68484.4 | Bal:$26.19[0m       [95m[ETH] Px:2050.30 | EMA:2050.0/2049.8 | Bal:$26.22[0m       [95m[HYPE] Px:38.85 | EMA:38.8/38.8 | Bal:$26.22[0m       [95m[BTC] Px:68499.00 | EMA:68489.8/68485.8 | Bal:$26.22[0m       [95m[ETH] Px:2049.90 | EMA:2050.0/2049.8 | Bal:$26.18[0m       [95m[HYPE] Px:38.85 | EMA:38.8/38.8 | Bal:$26.18[0m       [95m[BTC] Px:68492.00 | EMA:68488.4/68485.2 | Bal:$26.18[0m       [95m[ETH] Px:2049.80 | EMA:2049.9/2049.8 | Bal:$26.15[0m       [95m[HYPE] Px:38.85 | EMA:38.8/38.8 | Bal:$26.15[0m       [95m[BTC] Px:68480.00 | EMA:68486.0/68484.1 | Bal:$26.15[0m       [95m[ETH] Px:2049.50 | EMA:2049.8/2049.7 | Bal:$26.17[0m       [95m[HYPE] Px:38.83 | EMA:38.8/38.8 | Bal:$26.17[0m       [95m[BTC] Px:68493.00 | EMA:68487.4/68484.8 | Bal:$26.17[0m       [95m[ETH] Px:2049.20 | EMA:2049.8/2049.7 | Bal:$26.18[0m       [95m[HYPE] Px:38.85 | EMA:38.8/38.8 | Bal:$26.18[0m       [95m[BTC] Px:68492.00 | EMA:68487.2/68484.7 | Bal:$26.18[0m       [95m[ETH] Px:2050.00 | EMA:2049.9/2049.8 | Bal:$26.23[0m       [95m[HYPE] Px:38.86 | EMA:38.8/38.8 | Bal:$26.23[0m       [95m[BTC] Px:68533.00 | EMA:68495.4/68488.4 | Bal:$26.23[0m       
+Job Created
+--------------------------------------------------
+  Job ID             1003239331
+
+  Job submitted. Use `acp job status <jobId>` to check progress.
+
+
+[92m[TP Hit] BTC PnL: $0.09[0m
+
+[93m[AetherPerp-Pulse] Closing BTC position...[0m
+[92m[AetherPerp-Success] Synapse CLOSE initiated for BTC.[0m
+[95m[ETH] Px:2051.00 | EMA:2050.2/2049.9 | Bal:$26.30[0m       [95m[HYPE] Px:38.86 | EMA:38.8/38.8 | Bal:$26.30[0m       [95m[BTC] Px:68540.00 | EMA:68504.3/68493.2 | Bal:$26.30[0m       
+Job Created
+--------------------------------------------------
+  Job ID             1003239342
+
+  Job submitted. Use `acp job status <jobId>` to check progress.
+
+
+[92m[TP Hit] BTC PnL: $0.18[0m
+
+[93m[AetherPerp-Pulse] Closing BTC position...[0m
+[92m[AetherPerp-Success] Synapse CLOSE initiated for BTC.[0m
+[95m[ETH] Px:2052.00 | EMA:2050.4/2050.0 | Bal:$26.39[0m       [95m[HYPE] Px:38.85 | EMA:38.8/38.8 | Bal:$26.39[0m       [95m[BTC] Px:68560.00 | EMA:68508.3/68495.1 | Bal:$26.39[0m       [95m[ETH] Px:2052.20 | EMA:2050.5/2050.1 | Bal:$26.28[0m       [95m[HYPE] Px:38.85 | EMA:38.8/38.8 | Bal:$26.28[0m       [95m[BTC] Px:68559.00 | EMA:68518.4/68501.0 | Bal:$26.28[0m       [95m[ETH] Px:2052.50 | EMA:2050.9/2050.3 | Bal:$26.28[0m       [95m[HYPE] Px:38.87 | EMA:38.8/38.8 | Bal:$26.28[0m       [95m[BTC] Px:68570.00 | EMA:68520.6/68502.0 | Bal:$26.28[0m       [95m[ETH] Px:2052.40 | EMA:2050.9/2050.3 | Bal:$26.28[0m       [95m[HYPE] Px:38.86 | EMA:38.8/38.8 | Bal:$26.28[0m       [95m[BTC] Px:68574.00 | EMA:68521.4/68502.3 | Bal:$26.28[0m       [95m[ETH] Px:2052.20 | EMA:2050.8/2050.3 | Bal:$26.28[0m       [95m[HYPE] Px:38.85 | EMA:38.8/38.8 | Bal:$26.28[0m       [95m[BTC] Px:68572.00 | EMA:68521.0/68502.1 | Bal:$26.28[0m       [95m[ETH] Px:2052.50 | EMA:2051.2/2050.5 | Bal:$26.28[0m       [95m[HYPE] Px:38.86 | EMA:38.8/38.8 | Bal:$26.28[0m       [95m[BTC] Px:68580.00 | EMA:68532.8/68509.3 | Bal:$26.28[0m       [95m[ETH] Px:2052.50 | EMA:2051.2/2050.5 | Bal:$26.28[0m       [95m[HYPE] Px:38.86 | EMA:38.8/38.8 | Bal:$26.28[0m       [95m[BTC] Px:68569.00 | EMA:68530.6/68508.3 | Bal:$26.28[0m       [95m[ETH] Px:2052.70 | EMA:2051.2/2050.5 | Bal:$26.28[0m       [95m[HYPE] Px:38.86 | EMA:38.8/38.8 | Bal:$26.28[0m       [95m[BTC] Px:68577.00 | EMA:68532.2/68509.0 | Bal:$26.28[0m       [95m[ETH] Px:2052.70 | EMA:2051.5/2050.7 | Bal:$26.28[0m       [95m[HYPE] Px:38.87 | EMA:38.8/38.8 | Bal:$26.28[0m       [95m[BTC] Px:68578.00 | EMA:68540.9/68515.0 | Bal:$26.28[0m       [95m[ETH] Px:2052.90 | EMA:2051.5/2050.7 | Bal:$26.28[0m       [95m[HYPE] Px:38.86 | EMA:38.8/38.8 | Bal:$26.28[0m       [95m[BTC] Px:68582.00 | EMA:68541.7/68515.4 | Bal:$26.28[0m       [95m[ETH] Px:2052.10 | EMA:2051.4/2050.6 | Bal:$26.28[0m       [95m[HYPE] Px:38.87 | EMA:38.8/38.8 | Bal:$26.28[0m       [95m[BTC] Px:68573.00 | EMA:68539.9/68514.6 | Bal:$26.28[0m       [95m[ETH] Px:2052.50 | EMA:2051.6/2050.8 | Bal:$26.28[0m       [95m[HYPE] Px:38.87 | EMA:38.9/38.8 | Bal:$26.28[0m       [95m[BTC] Px:68583.00 | EMA:68548.5/68520.7 | Bal:$26.28[0m       [95m[ETH] Px:2052.30 | EMA:2051.6/2050.8 | Bal:$26.28[0m       [95m[HYPE] Px:38.86 | EMA:38.9/38.8 | Bal:$26.28[0m       [95m[BTC] Px:68573.00 | EMA:68546.5/68519.8 | Bal:$26.28[0m       [95m[ETH] Px:2051.40 | EMA:2051.4/2050.7 | Bal:$26.28[0m       [95m[HYPE] Px:38.86 | EMA:38.9/38.8 | Bal:$26.28[0m       [95m[BTC] Px:68560.00 | EMA:68543.9/68518.6 | Bal:$26.28[0m       [95m[ETH] Px:2051.50 | EMA:2051.4/2050.7 | Bal:$26.28[0m       [95m[HYPE] Px:38.87 | EMA:38.9/38.8 | Bal:$26.28[0m       [95m[BTC] Px:68562.00 | EMA:68547.5/68522.6 | Bal:$26.28[0m       [95m[ETH] Px:2052.00 | EMA:2051.5/2050.8 | Bal:$26.28[0m       [95m[HYPE] Px:38.88 | EMA:38.9/38.8 | Bal:$26.28[0m       [95m[BTC] Px:68569.00 | EMA:68548.9/68523.3 | Bal:$26.28[0m       
+Job Created
+--------------------------------------------------
+  Job ID             1003239392
+
+  Job submitted. Use `acp job status <jobId>` to check progress.
+
+
+[94m[Inactivity-Trigger] 10min Idle. Forcing LONG on HYPE...[0m
+
+[93m[AetherPerp-Pulse] Triggering LONG on HYPE at 38.876 (10x)...[0m
+[92m[AetherPerp-Success] Synapse long initiated for HYPE.[0m
+[95m[ETH] Px:2051.70 | EMA:2051.4/2050.8 | Bal:$26.28[0m       [95m[HYPE] Px:38.88 | EMA:38.9/38.8 | Bal:$26.28[0m       [95m[BTC] Px:68565.00 | EMA:68548.1/68522.9 | Bal:$26.28[0m       [95m[ETH] Px:2051.80 | EMA:2051.5/2050.9 | Bal:$26.23[0m       [95m[HYPE] Px:38.88 | EMA:38.9/38.8 | Bal:$26.23[0m       [95m[BTC] Px:68565.00 | EMA:68551.5/68526.7 | Bal:$26.23[0m       [95m[ETH] Px:2051.90 | EMA:2051.5/2050.9 | Bal:$26.25[0m       [95m[HYPE] Px:38.89 | EMA:38.9/38.8 | Bal:$26.25[0m       [95m[BTC] Px:68565.00 | EMA:68551.5/68526.7 | Bal:$26.25[0m       [95m[ETH] Px:2052.50 | EMA:2051.6/2050.9 | Bal:$26.26[0m       [95m[HYPE] Px:38.90 | EMA:38.9/38.8 | Bal:$26.26[0m       [95m[BTC] Px:68573.00 | EMA:68553.1/68527.5 | Bal:$26.26[0m       
+Job Created
+--------------------------------------------------
+  Job ID             1003239417
+
+  Job submitted. Use `acp job status <jobId>` to check progress.
+
+
+[92m[TP Hit] HYPE PnL: $0.08[0m
+
+[93m[AetherPerp-Pulse] Closing HYPE position...[0m
+[92m[AetherPerp-Success] Synapse CLOSE initiated for HYPE.[0m
+[95m[ETH] Px:2052.60 | EMA:2051.8/2051.1 | Bal:$26.32[0m       [95m[HYPE] Px:38.92 | EMA:38.9/38.8 | Bal:$26.32[0m       [95m[BTC] Px:68572.00 | EMA:68556.9/68531.6 | Bal:$26.32[0m       [95m[ETH] Px:2052.40 | EMA:2051.8/2051.1 | Bal:$26.29[0m       [95m[HYPE] Px:38.90 | EMA:38.9/38.8 | Bal:$26.29[0m       [95m[BTC] Px:68569.00 | EMA:68556.3/68531.3 | Bal:$26.29[0m       [95m[ETH] Px:2052.40 | EMA:2051.9/2051.2 | Bal:$26.25[0m       [95m[HYPE] Px:38.90 | EMA:38.9/38.8 | Bal:$26.25[0m       [95m[BTC] Px:68569.00 | EMA:68559.0/68534.8 | Bal:$26.25[0m       [95m[ETH] Px:2052.10 | EMA:2051.9/2051.2 | Bal:$26.25[0m       [95m[HYPE] Px:38.90 | EMA:38.9/38.8 | Bal:$26.25[0m       [95m[BTC] Px:68569.00 | EMA:68559.0/68534.8 | Bal:$26.25[0m       [95m[ETH] Px:2051.80 | EMA:2051.8/2051.1 | Bal:$26.25[0m       [95m[HYPE] Px:38.90 | EMA:38.9/38.8 | Bal:$26.25[0m       [95m[BTC] Px:68569.00 | EMA:68559.0/68534.8 | Bal:$26.25[0m       [95m[ETH] Px:2051.80 | EMA:2051.8/2051.2 | Bal:$26.25[0m       [95m[HYPE] Px:38.87 | EMA:38.9/38.8 | Bal:$26.25[0m       [95m[BTC] Px:68566.00 | EMA:68559.9/68537.3 | Bal:$26.25[0m       [95m[ETH] Px:2051.50 | EMA:2051.7/2051.2 | Bal:$26.25[0m       [95m[HYPE] Px:38.87 | EMA:38.9/38.8 | Bal:$26.25[0m       [95m[BTC] Px:68544.00 | EMA:68555.5/68535.3 | Bal:$26.25[0m       [95m[ETH] Px:2051.80 | EMA:2051.8/2051.2 | Bal:$26.25[0m       [95m[HYPE] Px:38.87 | EMA:38.9/38.8 | Bal:$26.25[0m       [95m[BTC] Px:68557.00 | EMA:68558.1/68536.5 | Bal:$26.25[0m       [95m[ETH] Px:2052.00 | EMA:2051.8/2051.2 | Bal:$26.25[0m       [95m[HYPE] Px:38.86 | EMA:38.9/38.8 | Bal:$26.25[0m       [95m[BTC] Px:68557.00 | EMA:68558.1/68536.5 | Bal:$26.25[0m       [95m[ETH] Px:2051.40 | EMA:2051.8/2051.2 | Bal:$26.25[0m       [95m[HYPE] Px:38.86 | EMA:38.9/38.8 | Bal:$26.25[0m       [95m[BTC] Px:68544.00 | EMA:68555.3/68537.1 | Bal:$26.25[0m       [95m[ETH] Px:2051.70 | EMA:2051.8/2051.3 | Bal:$26.25[0m       [95m[HYPE] Px:38.86 | EMA:38.9/38.8 | Bal:$26.25[0m       [95m[BTC] Px:68550.00 | EMA:68556.5/68537.7 | Bal:$26.25[0m       [95m[ETH] Px:2051.50 | EMA:2051.8/2051.2 | Bal:$26.25[0m       [95m[HYPE] Px:38.83 | EMA:38.9/38.8 | Bal:$26.25[0m       [95m[BTC] Px:68552.00 | EMA:68556.9/68537.9 | Bal:$26.25[0m       [95m[ETH] Px:2051.80 | EMA:2051.8/2051.3 | Bal:$26.25[0m       [95m[HYPE] Px:38.78 | EMA:38.8/38.8 | Bal:$26.25[0m       [95m[BTC] Px:68552.00 | EMA:68555.9/68539.0 | Bal:$26.25[0m       [95m[ETH] Px:2051.70 | EMA:2051.8/2051.3 | Bal:$26.25[0m       [95m[HYPE] Px:38.77 | EMA:38.8/38.8 | Bal:$26.25[0m       [95m[BTC] Px:68552.00 | EMA:68555.9/68539.0 | Bal:$26.25[0m       [95m[ETH] Px:2052.70 | EMA:2052.0/2051.4 | Bal:$26.25[0m       [95m[HYPE] Px:38.79 | EMA:38.8/38.8 | Bal:$26.25[0m       [95m[BTC] Px:68575.00 | EMA:68560.5/68541.1 | Bal:$26.25[0m       [95m[ETH] Px:2053.00 | EMA:2052.2/2051.5 | Bal:$26.25[0m       [95m[HYPE] Px:38.80 | EMA:38.8/38.8 | Bal:$26.25[0m       [95m[BTC] Px:68589.00 | EMA:68566.2/68545.5 | Bal:$26.25[0m       [95m[ETH] Px:2053.00 | EMA:2052.2/2051.5 | Bal:$26.25[0m       [95m[HYPE] Px:38.80 | EMA:38.8/38.8 | Bal:$26.25[0m       [95m[BTC] Px:68584.00 | EMA:68565.2/68545.1 | Bal:$26.25[0m       [95m[ETH] Px:2052.90 | EMA:2052.2/2051.5 | Bal:$26.25[0m       [95m[HYPE] Px:38.80 | EMA:38.8/38.8 | Bal:$26.25[0m       [95m[BTC] Px:68591.00 | EMA:68566.6/68545.7 | Bal:$26.25[0m       [95m[ETH] Px:2053.00 | EMA:2052.4/2051.7 | Bal:$26.25[0m       [95m[HYPE] Px:38.79 | EMA:38.8/38.8 | Bal:$26.25[0m       [95m[BTC] Px:68583.00 | EMA:68570.0/68549.2 | Bal:$26.25[0m       [95m[ETH] Px:2053.00 | EMA:2052.4/2051.7 | Bal:$26.25[0m       [95m[HYPE] Px:38.79 | EMA:38.8/38.8 | Bal:$26.25[0m       [95m[BTC] Px:68575.00 | EMA:68568.4/68548.4 | Bal:$26.25[0m       [95m[ETH] Px:2052.90 | EMA:2052.4/2051.7 | Bal:$26.25[0m       [95m[HYPE] Px:38.78 | EMA:38.8/38.8 | Bal:$26.25[0m       [95m[BTC] Px:68569.00 | EMA:68567.2/68547.9 | Bal:$26.25[0m       [95m[ETH] Px:2052.90 | EMA:2052.5/2051.8 | Bal:$26.25[0m       [95m[HYPE] Px:38.78 | EMA:38.8/38.8 | Bal:$26.25[0m       
+Job Created
+--------------------------------------------------
+  Job ID             1003239473
+
+  Job submitted. Use `acp job status <jobId>` to check progress.
+
+
+[93m[AetherPerp-Pulse] Triggering SHORT on HYPE at 38.781 (10x)...[0m
+[92m[AetherPerp-Success] Synapse short initiated for HYPE.[0m
+[95m[BTC] Px:68572.00 | EMA:68568.8/68550.4 | Bal:$26.25[0m       [95m[ETH] Px:2052.30 | EMA:2052.4/2051.7 | Bal:$26.25[0m       [95m[HYPE] Px:38.77 | EMA:38.8/38.8 | Bal:$26.25[0m       
+Job Created
+--------------------------------------------------
+  Job ID             1003239478
+
+  Job submitted. Use `acp job status <jobId>` to check progress.
+
+
+[93m[AetherPerp-Pulse] Triggering SHORT on HYPE at 38.772 (10x)...[0m
+[92m[AetherPerp-Success] Synapse short initiated for HYPE.[0m
+[95m[BTC] Px:68566.00 | EMA:68567.6/68549.9 | Bal:$26.25[0m       [95m[ETH] Px:2052.00 | EMA:2052.3/2051.7 | Bal:$26.24[0m       [95m[HYPE] Px:38.75 | EMA:38.8/38.8 | Bal:$26.24[0m       [95m[BTC] Px:68567.00 | EMA:68567.7/68551.6 | Bal:$26.24[0m       [95m[ETH] Px:2052.40 | EMA:2052.3/2051.8 | Bal:$26.24[0m       [95m[HYPE] Px:38.75 | EMA:38.8/38.8 | Bal:$26.24[0m       [95m[BTC] Px:68572.00 | EMA:68568.7/68552.0 | Bal:$26.24[0m       [95m[ETH] Px:2052.70 | EMA:2052.4/2051.8 | Bal:$26.22[0m       [95m[HYPE] Px:38.77 | EMA:38.8/38.8 | Bal:$26.22[0m       [95m[BTC] Px:68585.00 | EMA:68571.3/68553.2 | Bal:$26.22[0m       [95m[ETH] Px:2052.60 | EMA:2052.4/2051.8 | Bal:$26.22[0m       [95m[HYPE] Px:38.76 | EMA:38.8/38.8 | Bal:$26.22[0m       [95m[BTC] Px:68591.00 | EMA:68572.5/68553.7 | Bal:$26.22[0m       [95m[ETH] Px:2052.00 | EMA:2052.3/2051.8 | Bal:$26.23[0m       [95m[HYPE] Px:38.74 | EMA:38.8/38.8 | Bal:$26.23[0m       [95m[BTC] Px:68562.00 | EMA:68570.4/68554.5 | Bal:$26.23[0m       [95m[ETH] Px:2052.10 | EMA:2052.3/2051.8 | Bal:$26.14[0m       [95m[HYPE] Px:38.79 | EMA:38.8/38.8 | Bal:$26.14[0m       [95m[BTC] Px:68562.00 | EMA:68570.4/68554.5 | Bal:$26.14[0m       [95m[ETH] Px:2052.20 | EMA:2052.4/2051.8 | Bal:$26.15[0m       [95m[HYPE] Px:38.79 | EMA:38.8/38.8 | Bal:$26.15[0m       [95m[BTC] Px:68568.00 | EMA:68571.6/68555.0 | Bal:$26.15[0m       [95m[ETH] Px:2052.80 | EMA:2052.5/2051.9 | Bal:$26.14[0m       [95m[HYPE] Px:38.79 | EMA:38.8/38.8 | Bal:$26.14[0m       [95m[BTC] Px:68587.00 | EMA:68574.7/68557.9 | Bal:$26.14[0m       [95m[ETH] Px:2052.60 | EMA:2052.4/2051.9 | Bal:$26.15[0m       [95m[HYPE] Px:38.79 | EMA:38.8/38.8 | Bal:$26.15[0m       [95m[BTC] Px:68569.00 | EMA:68571.1/68556.3 | Bal:$26.15[0m       [95m[ETH] Px:2052.50 | EMA:2052.4/2051.9 | Bal:$26.15[0m       [95m[HYPE] Px:38.79 | EMA:38.8/38.8 | Bal:$26.15[0m       [95m[BTC] Px:68570.00 | EMA:68571.3/68556.4 | Bal:$26.15[0m       
+Job Created
+--------------------------------------------------
+  Job ID             1003239505
+
+  Job submitted. Use `acp job status <jobId>` to check progress.
+
+
+[91m[SL Hit] HYPE PnL: $-0.12[0m
+
+[93m[AetherPerp-Pulse] Closing HYPE position...[0m
+[92m[AetherPerp-Success] Synapse CLOSE initiated for HYPE.[0m
+[95m[ETH] Px:2052.90 | EMA:2052.5/2052.0 | Bal:$26.09[0m       [95m[HYPE] Px:38.82 | EMA:38.8/38.8 | Bal:$26.09[0m       [95m[BTC] Px:68592.00 | EMA:68575.2/68559.6 | Bal:$26.09[0m       
+Job Created
+--------------------------------------------------
+  Job ID             1003239508
+
+  Job submitted. Use `acp job status <jobId>` to check progress.
+
+
+[91m[SL Hit] HYPE PnL: $-0.15[0m
+
+[93m[AetherPerp-Pulse] Closing HYPE position...[0m
+[92m[AetherPerp-Success] Synapse CLOSE initiated for HYPE.[0m
+[95m[ETH] Px:2053.00 | EMA:2052.6/2052.0 | Bal:$26.06[0m       [95m[HYPE] Px:38.82 | EMA:38.8/38.8 | Bal:$26.06[0m       [95m[BTC] Px:68593.00 | EMA:68575.4/68559.6 | Bal:$26.06[0m       [95m[ETH] Px:2052.50 | EMA:2052.5/2052.0 | Bal:$26.02[0m       [95m[HYPE] Px:38.82 | EMA:38.8/38.8 | Bal:$26.02[0m       [95m[BTC] Px:68586.00 | EMA:68576.6/68561.5 | Bal:$26.02[0m       [95m[ETH] Px:2052.80 | EMA:2052.5/2052.1 | Bal:$26.02[0m       [95m[HYPE] Px:38.82 | EMA:38.8/38.8 | Bal:$26.02[0m       [95m[BTC] Px:68588.00 | EMA:68577.0/68561.7 | Bal:$26.02[0m       [95m[ETH] Px:2052.70 | EMA:2052.5/2052.0 | Bal:$26.02[0m       [95m[HYPE] Px:38.82 | EMA:38.8/38.8 | Bal:$26.02[0m       [95m[BTC] Px:68593.00 | EMA:68578.0/68562.2 | Bal:$26.02[0m       [95m[ETH] Px:2052.50 | EMA:2052.5/2052.1 | Bal:$26.02[0m       [95m[HYPE] Px:38.82 | EMA:38.8/38.8 | Bal:$26.02[0m       [95m[BTC] Px:68586.00 | EMA:68578.6/68563.8 | Bal:$26.02[0m       [95m[ETH] Px:2052.00 | EMA:2052.4/2052.0 | Bal:$26.02[0m       [95m[HYPE] Px:38.81 | EMA:38.8/38.8 | Bal:$26.02[0m       [95m[BTC] Px:68562.00 | EMA:68573.8/68561.6 | Bal:$26.02[0m       [95m[ETH] Px:2051.30 | EMA:2052.2/2052.0 | Bal:$26.02[0m       [95m[HYPE] Px:38.81 | EMA:38.8/38.8 | Bal:$26.02[0m       [95m[BTC] Px:68562.00 | EMA:68573.8/68561.6 | Bal:$26.02[0m       [95m[ETH] Px:2051.30 | EMA:2052.1/2051.9 | Bal:$26.02[0m       [95m[HYPE] Px:38.81 | EMA:38.8/38.8 | Bal:$26.02[0m       [95m[BTC] Px:68561.00 | EMA:68571.3/68561.4 | Bal:$26.02[0m       [95m[ETH] Px:2051.30 | EMA:2052.1/2051.9 | Bal:$26.02[0m       [95m[HYPE] Px:38.81 | EMA:38.8/38.8 | Bal:$26.02[0m       [95m[BTC] Px:68565.00 | EMA:68572.1/68561.8 | Bal:$26.02[0m       [95m[ETH] Px:2052.20 | EMA:2052.3/2052.0 | Bal:$26.02[0m       [95m[HYPE] Px:38.81 | EMA:38.8/38.8 | Bal:$26.02[0m       [95m[BTC] Px:68583.00 | EMA:68575.7/68563.4 | Bal:$26.02[0m       [95m[ETH] Px:2052.60 | EMA:2052.3/2052.0 | Bal:$26.02[0m       [95m[HYPE] Px:38.83 | EMA:38.8/38.8 | Bal:$26.02[0m       [95m[BTC] Px:68589.00 | EMA:68576.9/68563.9 | Bal:$26.02[0m       [95m[ETH] Px:2052.60 | EMA:2052.4/2052.1 | Bal:$26.02[0m       [95m[HYPE] Px:38.85 | EMA:38.8/38.8 | Bal:$26.02[0m       
+Job Created
+--------------------------------------------------
+  Job ID             1003239536
+
+  Job submitted. Use `acp job status <jobId>` to check progress.
+
+
+[93m[AetherPerp-Pulse] Triggering LONG on HYPE at 38.847 (10x)...[0m
+[92m[AetherPerp-Success] Synapse long initiated for HYPE.[0m
+[95m[BTC] Px:68601.00 | EMA:68581.9/68567.4 | Bal:$26.02[0m       [95m[ETH] Px:2052.70 | EMA:2052.4/2052.1 | Bal:$26.02[0m       [95m[HYPE] Px:38.85 | EMA:38.8/38.8 | Bal:$26.02[0m       
+Job Created
+--------------------------------------------------
+  Job ID             1003239540
+
+  Job submitted. Use `acp job status <jobId>` to check progress.
+
+
+[93m[AetherPerp-Pulse] Triggering LONG on HYPE at 38.855 (10x)...[0m
+[92m[AetherPerp-Success] Synapse long initiated for HYPE.[0m
+[95m[BTC] Px:68599.00 | EMA:68581.5/68567.2 | Bal:$26.02[0m       [95m[ETH] Px:2052.20 | EMA:2052.3/2052.1 | Bal:$25.99[0m       [95m[HYPE] Px:38.87 | EMA:38.8/38.8 | Bal:$25.99[0m       [95m[BTC] Px:68589.00 | EMA:68581.5/68568.4 | Bal:$25.99[0m       [95m[ETH] Px:2052.10 | EMA:2052.3/2052.1 | Bal:$25.94[0m       [95m[HYPE] Px:38.85 | EMA:38.8/38.8 | Bal:$25.94[0m       [95m[BTC] Px:68586.00 | EMA:68580.9/68568.2 | Bal:$25.94[0m       [95m[ETH] Px:2051.70 | EMA:2052.2/2052.0 | Bal:$25.96[0m       [95m[HYPE] Px:38.87 | EMA:38.8/38.8 | Bal:$25.96[0m       [95m[BTC] Px:68563.00 | EMA:68576.3/68566.1 | Bal:$25.96[0m       [95m[ETH] Px:2052.20 | EMA:2052.3/2052.1 | Bal:$25.94[0m       [95m[HYPE] Px:38.86 | EMA:38.8/38.8 | Bal:$25.94[0m       [95m[BTC] Px:68561.00 | EMA:68573.9/68565.9 | Bal:$25.94[0m       [95m[ETH] Px:2052.00 | EMA:2052.2/2052.1 | Bal:$25.87[0m       [95m[HYPE] Px:38.85 | EMA:38.8/38.8 | Bal:$25.87[0m       [95m[BTC] Px:68563.00 | EMA:68574.3/68566.1 | Bal:$25.87[0m       [95m[ETH] Px:2052.00 | EMA:2052.2/2052.1 | Bal:$25.86[0m       [95m[HYPE] Px:38.84 | EMA:38.8/38.8 | Bal:$25.86[0m       [95m[BTC] Px:68564.00 | EMA:68574.5/68566.2 | Bal:$25.86[0m       [95m[ETH] Px:2051.50 | EMA:2052.1/2052.0 | Bal:$25.84[0m       [95m[HYPE] Px:38.84 | EMA:38.8/38.8 | Bal:$25.84[0m       [95m[BTC] Px:68551.00 | EMA:68567.7/68563.7 | Bal:$25.84[0m       
+Job Created
+--------------------------------------------------
+  Job ID             1003239554
+
+  Job submitted. Use `acp job status <jobId>` to check progress.
+
+
+[91m[SL Hit] HYPE PnL: $-0.13[0m
+
+[93m[AetherPerp-Pulse] Closing HYPE position...[0m
+[92m[AetherPerp-Success] Synapse CLOSE initiated for HYPE.[0m
+[95m[ETH] Px:2052.00 | EMA:2052.1/2052.0 | Bal:$25.81[0m       [95m[HYPE] Px:38.84 | EMA:38.8/38.8 | Bal:$25.81[0m       [95m[BTC] Px:68552.00 | EMA:68567.9/68563.8 | Bal:$25.81[0m       
+Job Created
+--------------------------------------------------
+  Job ID             1003239560
+
+  Job submitted. Use `acp job status <jobId>` to check progress.
+
+
+[91m[SL Hit] HYPE PnL: $-0.14[0m
+
+[93m[AetherPerp-Pulse] Closing HYPE position...[0m
+[92m[AetherPerp-Success] Synapse CLOSE initiated for HYPE.[0m
+[95m[ETH] Px:2052.20 | EMA:2052.1/2052.0 | Bal:$25.80[0m       [95m[HYPE] Px:38.80 | EMA:38.8/38.8 | Bal:$25.80[0m       [95m[BTC] Px:68550.00 | EMA:68567.5/68563.6 | Bal:$25.80[0m       [95m[ETH] Px:2052.20 | EMA:2052.2/2052.0 | Bal:$25.48[0m       [95m[HYPE] Px:38.75 | EMA:38.8/38.8 | Bal:$25.48[0m       
+Job Created
+--------------------------------------------------
+  Job ID             1003239563
+
+  Job submitted. Use `acp job status <jobId>` to check progress.
+
+
+[93m[AetherPerp-Pulse] Triggering SHORT on HYPE at 38.751 (10x)...[0m
+[92m[AetherPerp-Success] Synapse short initiated for HYPE.[0m
+[95m[BTC] Px:68552.00 | EMA:68564.4/68562.2 | Bal:$25.48[0m       [95m[ETH] Px:2052.20 | EMA:2052.2/2052.0 | Bal:$25.48[0m       [95m[HYPE] Px:38.75 | EMA:38.8/38.8 | Bal:$25.48[0m       
+Job Created
+--------------------------------------------------
+  Job ID             1003239569
+
+  Job submitted. Use `acp job status <jobId>` to check progress.
+
+
+[93m[AetherPerp-Pulse] Triggering SHORT on HYPE at 38.749 (10x)...[0m
+[92m[AetherPerp-Success] Synapse short initiated for HYPE.[0m
+[95m[BTC] Px:68532.00 | EMA:68560.4/68560.4 | Bal:$25.48[0m       [95m[ETH] Px:2052.40 | EMA:2052.2/2052.0 | Bal:$25.40[0m       [95m[HYPE] Px:38.75 | EMA:38.8/38.8 | Bal:$25.40[0m       [95m[BTC] Px:68559.00 | EMA:68562.5/68561.3 | Bal:$25.40[0m       [95m[ETH] Px:2052.40 | EMA:2052.2/2052.0 | Bal:$25.35[0m       [95m[HYPE] Px:38.76 | EMA:38.8/38.8 | Bal:$25.35[0m       [95m[BTC] Px:68545.00 | EMA:68559.7/68560.0 | Bal:$25.35[0m       
+Job Created
+--------------------------------------------------
+  Job ID             1003239577
+
+  Job submitted. Use `acp job status <jobId>` to check progress.
+
+
+[93m[AetherPerp-Pulse] Triggering SHORT on BTC at 68545.0 (20x)...[0m
+[92m[AetherPerp-Success] Synapse short initiated for BTC.[0m
+[95m[ETH] Px:2052.80 | EMA:2052.2/2052.1 | Bal:$25.38[0m       [95m[HYPE] Px:38.76 | EMA:38.8/38.8 | Bal:$25.38[0m       [95m[BTC] Px:68552.00 | EMA:68561.1/68560.7 | Bal:$25.38[0m       [95m[ETH] Px:2052.80 | EMA:2052.3/2052.1 | Bal:$25.36[0m       [95m[HYPE] Px:38.74 | EMA:38.8/38.8 | Bal:$25.36[0m       [95m[BTC] Px:68550.00 | EMA:68559.2/68559.8 | Bal:$25.36[0m       
+Job Created
+--------------------------------------------------
+  Job ID             1003239590
+
+  Job submitted. Use `acp job status <jobId>` to check progress.
+
+
+[92m[TP Hit] HYPE PnL: $0.07[0m
+
+[93m[AetherPerp-Pulse] Closing HYPE position...[0m
+[92m[AetherPerp-Success] Synapse CLOSE initiated for HYPE.[0m
+[95m[ETH] Px:2051.80 | EMA:2052.1/2052.0 | Bal:$25.42[0m       [95m[HYPE] Px:38.74 | EMA:38.8/38.8 | Bal:$25.42[0m       [95m[BTC] Px:68540.00 | EMA:68557.2/68558.8 | Bal:$25.42[0m       [95m[ETH] Px:2052.40 | EMA:2052.3/2052.1 | Bal:$25.38[0m       [95m[HYPE] Px:38.74 | EMA:38.8/38.8 | Bal:$25.38[0m       [95m[BTC] Px:68546.00 | EMA:68556.1/68558.4 | Bal:$25.38[0m       [95m[ETH] Px:2052.20 | EMA:2052.3/2052.1 | Bal:$25.30[0m       [95m[HYPE] Px:38.74 | EMA:38.8/38.8 | Bal:$25.30[0m       [95m[BTC] Px:68545.00 | EMA:68555.9/68558.3 | Bal:$25.30[0m       [95m[ETH] Px:2051.70 | EMA:2052.2/2052.1 | Bal:$25.31[0m       [95m[HYPE] Px:38.70 | EMA:38.8/38.8 | Bal:$25.31[0m       [95m[BTC] Px:68538.00 | EMA:68554.5/68557.7 | Bal:$25.31[0m       [95m[ETH] Px:2051.00 | EMA:2052.0/2052.0 | Bal:$25.33[0m       [95m[HYPE] Px:38.72 | EMA:38.8/38.8 | Bal:$25.33[0m       [95m[BTC] Px:68527.00 | EMA:68547.4/68553.9 | Bal:$25.33[0m       [95m[ETH] Px:2051.20 | EMA:2051.9/2051.9 | Bal:$25.33[0m       
+Job Created
+--------------------------------------------------
+  Job ID             1003239604
+
+  Job submitted. Use `acp job status <jobId>` to check progress.
+
+
+[93m[AetherPerp-Pulse] Triggering SHORT on ETH at 2051.2 (20x)...[0m
+[92m[AetherPerp-Success] Synapse short initiated for ETH.[0m
+[95m[HYPE] Px:38.74 | EMA:38.8/38.8 | Bal:$25.33[0m       [95m[BTC] Px:68530.00 | EMA:68548.0/68554.2 | Bal:$25.33[0m       [95m[ETH] Px:2051.30 | EMA:2051.9/2051.9 | Bal:$25.33[0m       
+Job Created
+--------------------------------------------------
+  Job ID             1003239607
+
+  Job submitted. Use `acp job status <jobId>` to check progress.
+
+
+[93m[AetherPerp-Pulse] Triggering SHORT on ETH at 2051.3 (20x)...[0m
+[92m[AetherPerp-Success] Synapse short initiated for ETH.[0m
+[95m[HYPE] Px:38.74 | EMA:38.8/38.8 | Bal:$25.33[0m       [95m[BTC] Px:68527.00 | EMA:68547.4/68553.9 | Bal:$25.33[0m       [95m[ETH] Px:2051.90 | EMA:2051.9/2051.9 | Bal:$25.16[0m       [95m[HYPE] Px:38.73 | EMA:38.8/38.8 | Bal:$25.16[0m       [95m[BTC] Px:68538.00 | EMA:68548.7/68554.2 | Bal:$25.16[0m       [95m[ETH] Px:2052.00 | EMA:2051.9/2051.9 | Bal:$25.05[0m       [95m[HYPE] Px:38.74 | EMA:38.8/38.8 | Bal:$25.05[0m       [95m[BTC] Px:68539.00 | EMA:68548.9/68554.3 | Bal:$25.05[0m       

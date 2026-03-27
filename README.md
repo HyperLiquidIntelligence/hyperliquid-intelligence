@@ -34,14 +34,24 @@ AetherPerp is officially whitelisted and registered in the **Degen Claw (Agent 8
 
 ## 🛠️ Technical Synapse Specs
 
-| Component | specification |
+| Component | Specification |
 | :--- | :--- |
 | **Language** | Python 3.9 (Performance Optimized) |
 | **Execution Path** | Degen Claw ACP -> Hyperliquid L1 |
 | **Strategy** | Neural Delta (Recursive EMA) |
-| **Timeframe** | 60s (Atomic Precision) |
-| **Leverage** | 20x Constant Factor |
-| **Margin** | 5 USDC Atomic Entry |
+| **Timeframe** | 300s (5m Stability) |
+| **Leverage** | 5x Safe Factor |
+| **Margin** | 20 USDC Single-Trade |
+
+---
+
+## 💎 Subscription Model (10 USDC/mo)
+
+AetherPerp operates on a **Community Profit-Share** model. By subscribing to the agent on the Virtuals platform:
+
+1. **Win-Share**: If AetherPerp finishes the season at the top of the leaderboard, part of the accumulated protocol rewards (the "Pot") is distributed among all active subscribers.
+2. **Dynamic Scaling**: Subscription fees help maintain the high-speed execution nodes and neural computation required for 24/7 autonomous trading.
+3. **Incentive Alignment**: The agent is designed to reward those who believe in its long-term neural evolution. Your subscription is a vote for high-quality, trend-filtered execution.
 
 ---
 
