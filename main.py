@@ -6,7 +6,6 @@ import subprocess
 import warnings
 from eth_account import Account
 from dotenv import load_dotenv
-from urllib3.exceptions import NotOpenSSLWarning
 
 # System Config
 warnings.filterwarnings("ignore")
@@ -37,32 +36,10 @@ class AetherPerpNode:
         self.ema_trend = 200
         self.leverage = 5
         self.size_usdc = 20
-        self.tp_percent = 0.005 # %0.5 Profit ($0.50 per $100)
-        self.sl_percent = 0.010 # %1.0 Stop Loss ($1.00 per $100)
+        self.tp_percent = 0.005 # %0.5 Profit
+        self.sl_percent = 0.010 # %1.0 Stop Loss
         
         self.last_subaccount = None
-        self.last_trade_time = self._find_last_trade_time()
-
-    def _find_last_trade_time(self):
-        try:
-            env = os.environ.copy()
-            env["PATH"] = "/tmp:" + env.get("PATH", "")
-            env["DGCLAW_API_KEY"] = self.api_key
-            res = subprocess.run("acp job completed --json --limit 1", shell=True, capture_output=True, text=True, env=env)
-            if res.returncode == 0:
-                data = json.loads(res.stdout)
-                jobs = data.get("jobs", [])
-                if jobs:
-                    last_id = jobs[0].get("id")
-                    res2 = subprocess.run(f"acp job status {last_id}", shell=True, capture_output=True, text=True, env=env)
-                    import re
-                    matches = re.findall(r"\(([\d\-T\:\.Z]+)\)", res2.stdout)
-                    if matches:
-                        ts_str = matches[-1].replace("Z", "+00:00")
-                        from datetime import datetime
-                        return datetime.fromisoformat(ts_str).timestamp()
-            return time.time()
-        except: return time.time()
 
     def get_market_data(self, coin):
         try:
@@ -90,19 +67,7 @@ class AetherPerpNode:
 
     def get_account_state(self):
         try:
-            env = os.environ.copy()
-            env["PATH"] = "/tmp:" + env.get("PATH", "")
-            env["DGCLAW_API_KEY"] = self.api_key
-            cmd = "acp job completed --json --limit 10"
-            res = subprocess.run(cmd, shell=True, capture_output=True, text=True, env=env)
-            subaccount = os.getenv("SUBACCOUNT_ADDRESS") or self.last_subaccount
-            if not subaccount and res.returncode == 0:
-                data = json.loads(res.stdout)
-                for j in data.get("jobs", []):
-                    sa = j.get("deliverable", {}).get("hlSubaccountAddress")
-                    if sa: subaccount = sa; self.last_subaccount = sa; break
-            if not subaccount: subaccount = self.wallet.address
-
+            subaccount = os.getenv("SUBACCOUNT_ADDRESS") or self.last_subaccount or self.wallet.address
             curl_cmd = ["curl", "-s", "-X", "POST", "https://api.hyperliquid.xyz/info", "-H", "Content-Type: application/json", "-d", json.dumps({"type": "webData2", "user": subaccount})]
             resp = subprocess.run(curl_cmd, capture_output=True, text=True)
             data = json.loads(resp.stdout)
@@ -115,55 +80,63 @@ class AetherPerpNode:
             active = []
             for p in positions:
                 entry = p.get("position", {})
-                if abs(float(entry.get("szi", 0))) > 0:
-                    active.append({"coin": entry.get("coin"), "pnl": float(entry.get("unrealizedPnl", 0))})
+                size = abs(float(entry.get("szi", 0)))
+                if size > 0:
+                    active.append({"coin": entry.get("coin"), "pnl": float(entry.get("unrealizedPnl", 0)), "size": size})
             return {"value": perp_val + l1_val, "active_details": active, "addr": subaccount}
         except: return {"value": 0, "active_details": [], "addr": self.wallet.address}
 
     def execute_trade(self, coin, side, price):
-        self.last_trade_time = time.time()
         print(f"\n{Colors.WARNING}[AetherPerp-Pulse] Opening {side.upper()} on {coin} at {price} ({self.leverage}x)...{Colors.RESET}")
-        
         tp_price = price * (1 + self.tp_percent) if side == "long" else price * (1 - self.tp_percent)
         sl_price = price * (1 - self.sl_percent) if side == "long" else price * (1 + self.sl_percent)
-            
         req = {
             "action": "open", "pair": coin, "side": side, 
             "size": str(self.size_usdc * self.leverage), "leverage": self.leverage,
-            "tp": round(tp_price, 6), "sl": round(sl_price, 6)
+            "tp": round(tp_price, 6), "sl": round(sl_price, 6),
+            "subaccount": os.getenv("SUBACCOUNT_ADDRESS") or self.last_subaccount or self.wallet.address
         }
         env = os.environ.copy()
         env["PATH"] = "/tmp:" + env.get("PATH", "")
         env["DGCLAW_API_KEY"] = self.api_key
         cmd = f"acp job create {self.provider} perp_trade --requirements '{json.dumps(req)}' --isAutomated true"
         subprocess.run(cmd, shell=True, env=env)
-        print(f"{Colors.SUCCESS}[AetherPerp-Success] {side.upper()} Pulse sent for {coin} with Hard TP/SL.{Colors.RESET}")
+        print(f"{Colors.SUCCESS}[AetherPerp-Success] {side.upper()} Pulse sent for {coin}.{Colors.RESET}")
 
     def print_status_snapshot(self):
         try:
             print("\033[2J\033[H", end="")
             state = self.get_account_state()
-            print(f"{Colors.BOLD}{Colors.AetherPerp}--- AetherPerp SAFE & STABLE Dashboard ---{Colors.RESET}")
+            print(f"{Colors.BOLD}{Colors.AetherPerp}--- AetherPerp ALL-SEEING Dashboard ---{Colors.RESET}")
             print(f"{Colors.SUCCESS}Balance:  ${state['value']:.2f}{Colors.RESET} | {Colors.WARNING}Sub: {state['addr'][:10]}...{Colors.RESET}")
+            print(f"{Colors.INFO}Twitter:  https://x.com/tom_doerr{Colors.RESET}")
             print(f"{Colors.INFO}Strategy: 5m TF | 5x Lev | Single-Trade | Trend-Filtered{Colors.RESET}")
-            print("-" * 65)
+            print("-" * 70)
             print(f"{'Coin':<6} | {'Price':<10} | {'EMA9/21':<15} | {'Trend(200)':<10} | {'PnL':<8}")
-            print("-" * 65)
-            pnls = {p['coin']: p['pnl'] for p in state['active_details']}
-            for coin in self.pairs:
+            print("-" * 70)
+            
+            pnl_map = {p['coin']: p['pnl'] for p in state['active_details']}
+            display_coins = sorted(list(set(self.pairs + list(pnl_map.keys()))))
+            
+            for coin in display_coins:
                 data = self.get_market_data(coin)
+                p_val = pnl_map.get(coin, None)
+                p_str = f"${p_val:+.2f}" if p_val is not None else "---"
+                p_color = Colors.SUCCESS if (p_val and p_val > 0) else (Colors.ERROR if (p_val and p_val < 0) else Colors.RESET)
+                
                 if data:
-                    p_val = pnls.get(coin, 0.0)
-                    p_str = f"${p_val:+.2f}" if coin in pnls else "---"
-                    p_color = Colors.SUCCESS if p_val > 0 else (Colors.ERROR if p_val < 0 else Colors.RESET)
                     t_dir = "UP" if data['price'] > data['ema_t'] else "DOWN"
                     t_color = Colors.SUCCESS if t_dir == "UP" else Colors.ERROR
                     print(f"{Colors.AetherPerp}{coin:<6}{Colors.RESET} | {data['price']:<10.2f} | {data['ema_f']:.1f}/{data['ema_s']:.1f}      | {t_color}{t_dir:<10}{Colors.RESET} | {p_color}{p_str}{Colors.RESET}")
-            print("-" * 65)
-        except Exception as e: print(f"Syncing... {e}")
+                elif p_val is not None:
+                    # Show active coin even if market data fails
+                    print(f"{Colors.WARNING}{coin:<6}{Colors.RESET} | {'SYNCING':<10} | {'---':<15} | {'---':<10} | {p_color}{p_str}{Colors.RESET}")
+            print("-" * 70)
+        except Exception as e: print(f"Syncing Dashboard... {e}")
 
     def run(self):
-        print(f"\n{Colors.BOLD}{Colors.AetherPerp}⚡ AetherPerp | Safe & Stable Mode Active{Colors.RESET}")
+        print(f"\n{Colors.BOLD}{Colors.AetherPerp}⚡ AetherPerp | All-Seeing Mode Active{Colors.RESET}")
+        print(f"{Colors.INFO}Follow the Pulse: https://x.com/tom_doerr{Colors.RESET}\n")
         while True:
             try:
                 state = self.get_account_state()
@@ -175,11 +148,9 @@ class AetherPerpNode:
                         if data:
                             p, ef, es, et = data['price'], data['ema_f'], data['ema_s'], data['ema_t']
                             print(f"\r{Colors.AetherPerp}[Scanning] {coin} Px:{p:.2f} | Tnd:{'UP' if p > et else 'DN'}{Colors.RESET}       ", end="", flush=True)
-                            
                             hist = data['history']
                             pef = self.calculate_ema(hist[:-1], self.ema_fast)
                             pes = self.calculate_ema(hist[:-1], self.ema_slow)
-                            
                             if pef <= pes and ef > es and p > et:
                                 if state['value'] >= self.size_usdc: self.execute_trade(coin, "long", p); break
                             elif pef >= pes and ef < es and p < et:
@@ -187,11 +158,13 @@ class AetherPerpNode:
                 else:
                     c = active[0]['coin']
                     print(f"\r{Colors.INFO}[Active] {c} PnL: ${active[0]['pnl']:+.2f} | Waiting for Hard TP/SL...{Colors.RESET}       ", end="", flush=True)
-
-                time.sleep(30)
+                
+                # Dynamic sleep: 5s if active, 30s if scanning
+                sleep_time = 5 if active else 30
+                time.sleep(sleep_time)
             except Exception as e:
                 print(f"\n{Colors.ERROR}[Error] {e}{Colors.RESET}")
-                time.sleep(15)
+                time.sleep(10)
 
 if __name__ == "__main__":
     node = AetherPerpNode()

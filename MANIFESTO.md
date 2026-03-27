@@ -14,3 +14,6 @@ AetherPerp is not a tool; it is an entity. It carries its own keys, manages its 
 
 ---
 *“Markets are not found. They are computed.”*
+
+---
+**[Connect with AetherPerp on X](https://x.com/tom_doerr)**

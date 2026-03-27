@@ -3,6 +3,9 @@
 ![AetherPerp Status](https://img.shields.io/badge/Status-Operational-92ff92?style=for-the-badge)
 ![Network](https://img.shields.io/badge/Network-Hyperliquid_L1-blue?style=for-the-badge)
 ![Protocol](https://img.shields.io/badge/Protocol-ACP_Private_V2-purple?style=for-the-badge)
+![X Account](https://img.shields.io/badge/X-tom__doerr-black?style=for-the-badge&logo=x)
+
+[Follow AetherPerp on X](https://x.com/tom_doerr)
 
 > "Markets are not found. They are computed. Liquidity is not requested. It is bridged."
 
